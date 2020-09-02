@@ -1,0 +1,15 @@
+.button-section {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin: 1vh 0 1vh 0;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    font-size: 150%;
+    padding: 1vh 0 1vh 0;
+}

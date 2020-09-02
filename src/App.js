@@ -1,26 +1,101 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App-style.css'
+import MyButton from './components/MyButton-component/MyButton'
+import Champions from './assets/champions.json'
+import Galaxies from './assets/galaxies.json'
+import Items from './assets/items.json'
+import Traits from './assets/traits.json'
+
+class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      champions: false,
+      galaxies: false,
+      items: false,
+      traits: false
+    }
+  }
+
+  getChampions = () => {
+    this.setState({champions: true,
+      galaxies: false,
+      items: false,
+      traits: false })
+    console.log(this.state);
+    console.log(Champions);
+  }
+
+  getGalaxies = () => {
+    this.setState({champions: false,
+      galaxies: true,
+      items: false,
+      traits: false })
+    console.log(this.state);
+    console.log(Galaxies);
+  }
+
+  getItems = () => {
+    this.setState({champions: false,
+      galaxies: false,
+      items: true,
+      traits: false })
+    console.log(this.state);
+    console.log(Items);
+  }
+
+  getTraits = () => {
+    this.setState({champions: false,
+      galaxies: false,
+      items: false,
+      traits: true })
+    console.log(this.state);
+    console.log(Traits);
+  }
+
+
+  render() {
+    const { champions, galaxies, items, traits } = this.state;
+    return (
+      <div className="main-page-section">
+        <a className="title">TFT Encyclopedia</a>
+        <div className="button-section">
+          <MyButton
+            name="Champions"
+            click={this.getChampions}
+          />
+          <MyButton
+            name="Galaxies"
+            click={this.getGalaxies}
+          />
+          <MyButton
+            name="Items"
+            click={this.getItems}
+          />
+          <MyButton
+            name="Traits"
+            click={this.getTraits}
+          />
+        </div>
+        <div className="info-section">
+        {champions? 
+          <div className="char-section">
+            {Champions.map(el => {
+              return (
+                <div className="char-name">
+                  {el.name}
+                </div>
+              );
+            })}
+          </div>
+        : null
+        }
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
