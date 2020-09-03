@@ -5,13 +5,14 @@
     align-items: center;
     padding: 1vh 1vw 1vh 1vw;
     margin: 1vh 1vw 1vh 1vw;
-    border: #F05D23 solid 0.5vw;
-    border-radius: 20%;
+    border: #F05D23 solid 3px;
+    border-radius: 25%;
 }
 
 .char-card:hover {
     transform: scale(1.5);
     transition-duration: 0.5s;
+    border-radius: 0;
 }
 
 .char-image {

@@ -27,8 +27,8 @@ class App extends Component {
       galaxies: false,
       items: false,
       traits: false })
-    console.log(this.state);
-    console.log(Champions);
+    //console.log(this.state);
+    //console.log(Champions);
   }
 
   getGalaxies = () => {
