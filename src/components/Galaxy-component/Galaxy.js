@@ -3,6 +3,7 @@ import React from 'react'
 import './Galaxy-style.css'
 
 const Galaxy = ({name, imgId, description }) => {
+
     return (
         <div className="galaxy-card">
             <a className="galaxy-name">{name}</a>

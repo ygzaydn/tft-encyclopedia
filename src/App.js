@@ -4,6 +4,7 @@ import './App-style.css'
 import MyButton from './components/MyButton-component/MyButton'
 import Champion from './components/Champion-component/Champion'
 import Item from './components/Item-component/Item'
+import Trait from './components/Trait-component/Trait'
 
 
 import Champions from './assets/champions.json'
@@ -130,6 +131,21 @@ class App extends Component {
           </div>
         : null}
 
+        {traits?
+          <div className="traits-section">
+            <a className="info-title">Traits</a>
+            {Traits.map(el => {
+              return (
+                <Trait
+                  name={el.name}
+                  key={el.key}
+                  description={el.description}
+                  imgId={el.key}
+                  />
+              )
+            })}
+          </div>
+        :null}
         </div>
       </div>
     );
