@@ -86,6 +86,7 @@ class App extends Component {
         <div className="info-section">
         {champions? 
           <div className="char-section">
+            <a className="info-title">Champions</a>
             {Champions.map(el => {
               return (
                 <Champion
@@ -100,6 +101,7 @@ class App extends Component {
         }
         {galaxies?
           <div className="galaxy-section">
+            <a className="info-title">Galaxies</a>
             {Galaxies.map(el => {
               return (
                 <Galaxy
