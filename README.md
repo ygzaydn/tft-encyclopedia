@@ -1,3 +1,5 @@
+Click here for website [https://ygzaydn.github.io/tft-encyclopedia/](https://ygzaydn.github.io/tft-encyclopedia/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
