@@ -1,33 +1,32 @@
-.char-card {
+.galaxy-card {
     display:flex;
     flex-direction: column;
-    background-color: #261C15;
+    background-color: #C5D86D;
     align-items: center;
     padding: 1vh 1vw 1vh 1vw;
     margin: 1vh 1vw 1vh 1vw;
     border: #F05D23 solid 3px;
+    flex-basis: 30vw;
     border-radius: 5%;
-    flex-basis: 10vh;
 }
 
-.char-card:hover {
+.galaxy-card:hover {
     transform: scale(1.5);
     transition-duration: 0.5s;
 }
 
-.char-image {
-    margin: 0.5vh 0 0.5vh 0;
-}
-.char-name {
+.galaxy-name {
     font-weight: bold;
-    color: #C5D86D;
+    color: #261C15;
 }
 
-.char-cost {
-    color: #E4E6C3;
+.galaxy-image {
+    width: 50%;
+    height: auto;
     border-bottom: #F05D23 solid 0.1vw;
 }
 
-.char-trait {
-    color: #F7F7F2;
+.galaxy-description {
+    color: #261C15;
+    word-break: break-word;
 }

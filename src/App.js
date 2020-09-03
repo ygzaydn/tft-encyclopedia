@@ -9,6 +9,7 @@ import Champions from './assets/champions.json'
 import Galaxies from './assets/galaxies.json'
 import Items from './assets/items.json'
 import Traits from './assets/traits.json'
+import Galaxy from './components/Galaxy-component/Galaxy';
 
 class App extends Component {
 
@@ -97,6 +98,20 @@ class App extends Component {
           </div>
         : null
         }
+        {galaxies?
+          <div className="galaxy-section">
+            {Galaxies.map(el => {
+              return (
+                <Galaxy
+                  name={el.name}
+                  key={el.key}
+                  description={el.description}
+                  imgId={el.key} />
+              )
+            })}
+
+          </div>
+        : null}
         </div>
       </div>
     );
