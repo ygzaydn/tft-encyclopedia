@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 
 import './App-style.css'
 import MyButton from './components/MyButton-component/MyButton'
+import Champion from './components/Champion-component/Champion'
+
+
 import Champions from './assets/champions.json'
 import Galaxies from './assets/galaxies.json'
 import Items from './assets/items.json'
@@ -84,9 +87,11 @@ class App extends Component {
           <div className="char-section">
             {Champions.map(el => {
               return (
-                <div className="char-name">
-                  {el.name}
-                </div>
+                <Champion
+                  name={el.name}
+                  cost={el.cost}
+                  traits={el.traits}
+                  key={el.championId} />
               );
             })}
           </div>
