@@ -4,6 +4,10 @@
     flex-basis: 30vw;
 }
 
+body {
+    background-color: #F7F7F2;
+}
+
 @media only screen and (max-width: 600px) {
     .button-section{
         display: flex;
@@ -56,6 +60,7 @@
     font-weight: bold;;
     padding: 0 0 0.5vh 0;
     border-bottom:#261C15 solid 2px;
+    border-top:#261C15 solid 2px;
     border-radius: 30%;
     color: #261C15;
     
