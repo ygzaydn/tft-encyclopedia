@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/tft-encyclopedia/static/css/main.1a61ec83.chunk.css",
-    "main.js": "/tft-encyclopedia/static/js/main.5a0a8682.chunk.js",
-    "main.js.map": "/tft-encyclopedia/static/js/main.5a0a8682.chunk.js.map",
+    "main.css": "/tft-encyclopedia/static/css/main.cd8b21e4.chunk.css",
+    "main.js": "/tft-encyclopedia/static/js/main.e3714066.chunk.js",
+    "main.js.map": "/tft-encyclopedia/static/js/main.e3714066.chunk.js.map",
     "runtime-main.js": "/tft-encyclopedia/static/js/runtime-main.2b748469.js",
     "runtime-main.js.map": "/tft-encyclopedia/static/js/runtime-main.2b748469.js.map",
-    "static/js/2.08192e0b.chunk.js": "/tft-encyclopedia/static/js/2.08192e0b.chunk.js",
-    "static/js/2.08192e0b.chunk.js.map": "/tft-encyclopedia/static/js/2.08192e0b.chunk.js.map",
+    "static/js/2.f2361e5a.chunk.js": "/tft-encyclopedia/static/js/2.f2361e5a.chunk.js",
+    "static/js/2.f2361e5a.chunk.js.map": "/tft-encyclopedia/static/js/2.f2361e5a.chunk.js.map",
     "index.html": "/tft-encyclopedia/index.html",
-    "precache-manifest.680b6e9d6a227b45b0940059df03a99b.js": "/tft-encyclopedia/precache-manifest.680b6e9d6a227b45b0940059df03a99b.js",
+    "precache-manifest.39bd297b5c9c8e5c812cf846d59b1001.js": "/tft-encyclopedia/precache-manifest.39bd297b5c9c8e5c812cf846d59b1001.js",
     "service-worker.js": "/tft-encyclopedia/service-worker.js",
-    "static/css/main.1a61ec83.chunk.css.map": "/tft-encyclopedia/static/css/main.1a61ec83.chunk.css.map",
-    "static/js/2.08192e0b.chunk.js.LICENSE.txt": "/tft-encyclopedia/static/js/2.08192e0b.chunk.js.LICENSE.txt",
+    "static/css/main.cd8b21e4.chunk.css.map": "/tft-encyclopedia/static/css/main.cd8b21e4.chunk.css.map",
+    "static/js/2.f2361e5a.chunk.js.LICENSE.txt": "/tft-encyclopedia/static/js/2.f2361e5a.chunk.js.LICENSE.txt",
+    "static/media/38.png": "/tft-encyclopedia/static/media/38.32b4bfe1.png",
     "static/media/TFT3_GameVariation_BigLittleLegends.png": "/tft-encyclopedia/static/media/TFT3_GameVariation_BigLittleLegends.ba597847.png",
     "static/media/TFT3_GameVariation_Bonanza.png": "/tft-encyclopedia/static/media/TFT3_GameVariation_Bonanza.53da1d27.png",
     "static/media/TFT3_GameVariation_FreeNeekos.png": "/tft-encyclopedia/static/media/TFT3_GameVariation_FreeNeekos.b46364a1.png",
@@ -26,6 +27,7 @@
     "static/media/annie.png": "/tft-encyclopedia/static/media/annie.11595b05.png",
     "static/media/aurelionsol.png": "/tft-encyclopedia/static/media/aurelionsol.0c8fba8b.png",
     "static/media/bard.png": "/tft-encyclopedia/static/media/bard.d06d74a2.png",
+    "static/media/bg.png": "/tft-encyclopedia/static/media/bg.57bed498.png",
     "static/media/caitlyn.png": "/tft-encyclopedia/static/media/caitlyn.e89203ae.png",
     "static/media/cassiopeia.png": "/tft-encyclopedia/static/media/cassiopeia.f4a963ac.png",
     "static/media/darius.png": "/tft-encyclopedia/static/media/darius.8f195b30.png",
@@ -75,8 +77,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2b748469.js",
-    "static/js/2.08192e0b.chunk.js",
-    "static/css/main.1a61ec83.chunk.css",
-    "static/js/main.5a0a8682.chunk.js"
+    "static/js/2.f2361e5a.chunk.js",
+    "static/css/main.cd8b21e4.chunk.css",
+    "static/js/main.e3714066.chunk.js"
   ]
 }
