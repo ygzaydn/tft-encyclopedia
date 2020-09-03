@@ -1,5 +1,5 @@
-.galaxy-card {
-    display:flex;
+.item-card {
+    display: flex;
     flex-direction: column;
     background-color: #C5D86D;
     align-items: center;
@@ -10,23 +10,20 @@
     border-radius: 5%;
 }
 
-.galaxy-card:hover {
+.item-card:hover {
     transform: scale(1.25);
     transition-duration: 0.5s;
 }
 
-.galaxy-name {
+.item-name {
     font-weight: bold;
     color: #261C15;
+    margin: 0 0 2vh 0;
+    text-align: center;
 }
 
-.galaxy-image {
+.item-image {
     width: 50%;
     height: auto;
     border-bottom: #F05D23 solid 0.1vw;
-}
-
-.galaxy-description {
-    color: #261C15;
-    word-break: break-word;
 }

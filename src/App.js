@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './App-style.css'
 import MyButton from './components/MyButton-component/MyButton'
 import Champion from './components/Champion-component/Champion'
+import Item from './components/Item-component/Item'
 
 
 import Champions from './assets/champions.json'
@@ -59,7 +60,6 @@ class App extends Component {
     console.log(Traits);
   }
 
-
   render() {
     const { champions, galaxies, items, traits } = this.state;
     return (
@@ -84,7 +84,8 @@ class App extends Component {
           />
         </div>
         <div className="info-section">
-        {champions? 
+        
+        {champions?
           <div className="char-section">
             <a className="info-title">Champions</a>
             {Champions.map(el => {
@@ -97,8 +98,8 @@ class App extends Component {
               );
             })}
           </div>
-        : null
-        }
+        : null}
+
         {galaxies?
           <div className="galaxy-section">
             <a className="info-title">Galaxies</a>
@@ -111,9 +112,24 @@ class App extends Component {
                   imgId={el.key} />
               )
             })}
-
           </div>
         : null}
+
+        {items?
+          <div className="items-section">
+            <a className="info-title">Items</a>
+            {Items.map(el => {
+              return (
+                <Item
+                  name={el.name}
+                  key={el.id}
+                  imgId={el.id}
+                 />
+              )
+            })}
+          </div>
+        : null}
+
         </div>
       </div>
     );
