@@ -23,7 +23,35 @@
 }
 
 .item-image {
+    width: 30%;
+    height: auto;
+    margin-bottom: 2%;
+}
+
+.item-description {
+    color: #261C15;
+    margin: 0 0 2vh 0;
+    text-align: center;
+}
+
+.item-subimage {
     width: 50%;
     height: auto;
-    border-bottom: #F05D23 solid 0.1vw;
+    padding: 0;
+    justify-self: flex-end;
+}
+
+.item-subimage-section{
+    padding: 5% 30% 0 30%;
+    border-top: solid black 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.core-item-description{
+    padding: 0 30% 0 30%;
+    text-align: center;
+    font-weight: bold;
+    border-top: solid black 1px;
 }

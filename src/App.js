@@ -125,6 +125,7 @@ class App extends Component {
                   name={el.name}
                   key={el.id}
                   imgId={el.id}
+                  description={el.description}
                  />
               )
             })}
