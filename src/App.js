@@ -73,10 +73,10 @@ class App extends Component {
     console.log(this.state.Traits);
   }
 
-  searchFilter = (data, metaData) => {
+  searchFilter = (dataName, metaData, filterParam) => {
     const e=window.event;
-    const newObj = metaData.filter(el => el.name.toLowerCase().includes(e.target.value.toLowerCase()));
-    this.setState({[data]: newObj})
+    const newObj = metaData.filter(el => el[filterParam].toString().toLowerCase().includes(e.target.value.toLowerCase()));
+    this.setState({[dataName]: newObj})
   }
 
   render() {
@@ -107,11 +107,19 @@ class App extends Component {
         {flags.champions?
           <div className="char-section">
             <a className="info-title">Champions</a>
+            <div className="search-section">
             <Search 
               placeholder="Filter by name"
               value={searchText}
-              searchFunction={()=>this.searchFilter('Champions', ChampionsMetaData)}
+              searchFunction={()=>this.searchFilter('Champions', ChampionsMetaData, 'name')}
             />
+            <Search 
+              placeholder="Filter by cost"
+              value={searchText}
+              searchFunction={()=>this.searchFilter('Champions', ChampionsMetaData, 'cost')}
+            />
+            </div>
+            
             {Champions.map(el => {
               return (
                 <Champion
