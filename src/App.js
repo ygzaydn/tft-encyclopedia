@@ -118,6 +118,11 @@ class App extends Component {
               value={searchText}
               searchFunction={()=>this.searchFilter('Champions', ChampionsMetaData, 'cost')}
             />
+            <Search 
+              placeholder="Filter by traits"
+              value={searchText}
+              searchFunction={()=>this.searchFilter('Champions', ChampionsMetaData, 'traits')}
+            />
             </div>
             
             {Champions.map(el => {
