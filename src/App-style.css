@@ -82,3 +82,11 @@ body {
     justify-content: center;
     padding: 1vh 2vh 1vh 2vh;
 }
+
+.search-section {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    padding: 0.5vh 0 0.5vh 0;
+    justify-content: center;
+}

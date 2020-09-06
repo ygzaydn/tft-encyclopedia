@@ -5,6 +5,7 @@ import './Search-style.css';
 const Search = ({ placeholder, searchText, searchFunction}) => {
     return (
         <input 
+            className="search-bar"
             type="text"
             placeholder={placeholder}
             value={searchText}

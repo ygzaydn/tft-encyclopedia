@@ -1,0 +1,15 @@
+.search-bar {
+    margin: 0 2vw 0 2vw;
+    border: none;
+    background-color: inherit;
+    align-items: center;
+    border-bottom: #F05D23 solid 3px;
+    color: #261C15;
+}
+
+.search-bar:focus, .search:hover, .search-bar:active, .search-bar:enabled{
+    border: none;
+    background-color: inherit;
+    border-bottom: #F05D23 solid 3px;
+}
+

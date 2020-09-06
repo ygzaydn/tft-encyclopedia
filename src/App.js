@@ -29,7 +29,10 @@ class App extends Component {
       Galaxies: GalaxiesMetaData,
       Items: ItemsMetaData,
       Traits: TraitsMetaData,
-      searchText: '',
+      searchQueryName: '',
+      searchQueryGold: '',
+      searchQueryTrait: '',
+      searchText: ''
     }
   }
 
@@ -39,7 +42,7 @@ class App extends Component {
       galaxies: false,
       items: false,
       traits: false }})
-    //console.log(this.state);
+    console.log(this.state);
     console.log(this.state.Champions);
   }
 
@@ -73,9 +76,32 @@ class App extends Component {
     console.log(this.state.Traits);
   }
 
-  searchFilter = (dataName, metaData, filterParam) => {
+  //searchFunction={()=>this.searchFilter('Champions', ChampionsMetaData, 'name')}
+
+  fixSearchState = ( dataName, metaData, filterParam) => {
     const e=window.event;
-    const newObj = metaData.filter(el => el[filterParam].toString().toLowerCase().includes(e.target.value.toLowerCase()));
+    console.log(e.target.value);
+
+    this.setState({searchText: e.target.value}, () => {
+      if (filterParam == 'name') this.setState({searchQueryName: this.state.searchText},() => {
+        this.searchFilter(dataName, metaData, filterParam);
+      })
+      else if (filterParam == 'cost') this.setState({searchQueryGold: this.state.searchText}, () => {
+        this.searchFilter(dataName, metaData, filterParam);
+      })
+      else if (filterParam == 'traits') this.setState({searchQueryTrait: this.state.searchText}, () => { this.searchFilter(dataName, metaData, filterParam);
+      })
+    })
+  };
+
+  searchFilter = (dataName, metaData, filterParam) => {
+    let newObj = metaData.filter(el => el[filterParam].toString().toLowerCase().includes(this.state.searchQueryName.toString().toLowerCase()));
+    console.log(newObj)
+    newObj = newObj.filter(el => el[filterParam].toString().toLowerCase().includes(this.state.searchQueryTrait.toString().toLowerCase()));
+    console.log(newObj)
+    newObj = newObj.filter(el => el[filterParam].toString().toLowerCase().includes(this.state.searchQueryGold.toString().toLowerCase()));
+    console.log(newObj)
+
     this.setState({[dataName]: newObj})
   }
 
@@ -111,17 +137,17 @@ class App extends Component {
             <Search 
               placeholder="Filter by name"
               value={searchText}
-              searchFunction={()=>this.searchFilter('Champions', ChampionsMetaData, 'name')}
+              searchFunction={()=>this.fixSearchState('Champions', ChampionsMetaData, 'name')}
             />
             <Search 
               placeholder="Filter by cost"
               value={searchText}
-              searchFunction={()=>this.searchFilter('Champions', ChampionsMetaData, 'cost')}
+              searchFunction={()=>this.fixSearchState('Champions', ChampionsMetaData, 'cost')}
             />
             <Search 
               placeholder="Filter by traits"
               value={searchText}
-              searchFunction={()=>this.searchFilter('Champions', ChampionsMetaData, 'traits')}
+              searchFunction={()=>this.fixSearchState('Champions', ChampionsMetaData, 'traits')}
             />
             </div>
             
