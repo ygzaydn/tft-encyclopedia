@@ -5,64 +5,82 @@ import MyButton from './components/MyButton-component/MyButton'
 import Champion from './components/Champion-component/Champion'
 import Item from './components/Item-component/Item'
 import Trait from './components/Trait-component/Trait'
+import Galaxy from './components/Galaxy-component/Galaxy'
+import Search from './components/Search-component/Search'
 
+import ChampionsMetaData from './assets/champions.json'
+import GalaxiesMetaData from './assets/galaxies.json'
+import ItemsMetaData from './assets/items.json'
+import TraitsMetaData from './assets/traits.json'
 
-import Champions from './assets/champions.json'
-import Galaxies from './assets/galaxies.json'
-import Items from './assets/items.json'
-import Traits from './assets/traits.json'
-import Galaxy from './components/Galaxy-component/Galaxy';
 
 class App extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      champions: false,
-      galaxies: false,
-      items: false,
-      traits: false
+      flags: {
+        champions: false,
+        galaxies: false,
+        items: false,
+        traits: false,
+      },
+      Champions: ChampionsMetaData,
+      Galaxies: GalaxiesMetaData,
+      Items: ItemsMetaData,
+      Traits: TraitsMetaData,
+      searchText: '',
     }
   }
 
   getChampions = () => {
-    this.setState({champions: true,
+    this.setState({flags: {
+      champions: true,
       galaxies: false,
       items: false,
-      traits: false })
+      traits: false }})
     //console.log(this.state);
-    //console.log(Champions);
+    console.log(this.state.Champions);
   }
 
   getGalaxies = () => {
-    this.setState({champions: false,
+    this.setState({flags: {
+      champions: false,
       galaxies: true,
       items: false,
-      traits: false })
+      traits: false }})
     console.log(this.state);
-    console.log(Galaxies);
+    console.log(this.state.Galaxies);
   }
 
   getItems = () => {
-    this.setState({champions: false,
+    this.setState({flags: {
+      champions: false,
       galaxies: false,
       items: true,
-      traits: false })
+      traits: false }})
     console.log(this.state);
-    console.log(Items);
+    console.log(this.state.Items);
   }
 
   getTraits = () => {
-    this.setState({champions: false,
+    this.setState({flags: {
+      champions: false,
       galaxies: false,
       items: false,
-      traits: true })
+      traits: true }})
     console.log(this.state);
-    console.log(Traits);
+    console.log(this.state.Traits);
+  }
+
+  searchFilter = (data, metaData) => {
+    const e=window.event;
+    const newObj = metaData.filter(el => el.name.toLowerCase().includes(e.target.value.toLowerCase()));
+    this.setState({[data]: newObj})
   }
 
   render() {
-    const { champions, galaxies, items, traits } = this.state;
+    const { flags, Champions, Galaxies, Items, Traits, searchText } = this.state;
     return (
       <div className="main-page-section">
         <a className="title">TFT Encyclopedia</a>
@@ -86,9 +104,14 @@ class App extends Component {
         </div>
         <div className="info-section">
         
-        {champions?
+        {flags.champions?
           <div className="char-section">
             <a className="info-title">Champions</a>
+            <Search 
+              placeholder="Filter by name"
+              value={searchText}
+              searchFunction={()=>this.searchFilter('Champions', ChampionsMetaData)}
+            />
             {Champions.map(el => {
               return (
                 <Champion
@@ -101,7 +124,7 @@ class App extends Component {
           </div>
         : null}
 
-        {galaxies?
+        {flags.galaxies?
           <div className="galaxy-section">
             <a className="info-title">Galaxies</a>
             {Galaxies.map(el => {
@@ -116,7 +139,7 @@ class App extends Component {
           </div>
         : null}
 
-        {items?
+        {flags.items?
           <div className="items-section">
             <a className="info-title">Items</a>
             {Items.map(el => {
@@ -132,7 +155,7 @@ class App extends Component {
           </div>
         : null}
 
-        {traits?
+        {flags.traits?
           <div className="traits-section">
             <a className="info-title">Traits</a>
             {Traits.map(el => {
