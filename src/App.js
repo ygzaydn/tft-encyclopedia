@@ -84,23 +84,18 @@ class App extends Component {
 
     this.setState({searchText: e.target.value}, () => {
       if (filterParam == 'name') this.setState({searchQueryName: this.state.searchText},() => {
-        this.searchFilter(dataName, metaData, filterParam);
+        this.searchFilter(dataName, metaData, 'name');
       })
       else if (filterParam == 'cost') this.setState({searchQueryGold: this.state.searchText}, () => {
-        this.searchFilter(dataName, metaData, filterParam);
+        this.searchFilter(dataName, metaData, 'cost');
       })
-      else if (filterParam == 'traits') this.setState({searchQueryTrait: this.state.searchText}, () => { this.searchFilter(dataName, metaData, filterParam);
+      else if (filterParam == 'traits') this.setState({searchQueryTrait: this.state.searchText}, () => { this.searchFilter(dataName, metaData, 'traits');
       })
     })
   };
 
   searchFilter = (dataName, metaData, filterParam) => {
-    let newObj = metaData.filter(el => el[filterParam].toString().toLowerCase().includes(this.state.searchQueryName.toString().toLowerCase()));
-    console.log(newObj)
-    newObj = newObj.filter(el => el[filterParam].toString().toLowerCase().includes(this.state.searchQueryTrait.toString().toLowerCase()));
-    console.log(newObj)
-    newObj = newObj.filter(el => el[filterParam].toString().toLowerCase().includes(this.state.searchQueryGold.toString().toLowerCase()));
-    console.log(newObj)
+    const newObj = this.state[dataName].filter(el => el[filterParam].toString().toLowerCase().includes(this.state.searchQueryName.toString().toLowerCase()));
 
     this.setState({[dataName]: newObj})
   }
