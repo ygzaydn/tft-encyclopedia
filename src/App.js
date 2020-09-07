@@ -29,9 +29,11 @@ class App extends Component {
       Galaxies: GalaxiesMetaData,
       Items: ItemsMetaData,
       Traits: TraitsMetaData,
-      searchQueryName: '',
-      searchQueryGold: '',
-      searchQueryTrait: '',
+      SearchQueries: {
+        Name: '',
+        Gold: '',
+        Trait: '',
+      },
       searchText: ''
     }
   }
@@ -76,26 +78,42 @@ class App extends Component {
     console.log(this.state.Traits);
   }
 
-  //searchFunction={()=>this.searchFilter('Champions', ChampionsMetaData, 'name')}
-
   fixSearchState = ( dataName, metaData, filterParam) => {
     const e=window.event;
-    console.log(e.target.value);
 
     this.setState({searchText: e.target.value}, () => {
-      if (filterParam == 'name') this.setState({searchQueryName: this.state.searchText},() => {
-        this.searchFilter(dataName, metaData, 'name');
+      if (filterParam === 'name') this.setState({SearchQueries: {
+        Name: this.state.searchText,
+        Gold: this.state.SearchQueries.Gold,
+        Trait: this.state.SearchQueries.Trait,
+      }},() => {
+        this.searchFilter(dataName, metaData);
       })
-      else if (filterParam == 'cost') this.setState({searchQueryGold: this.state.searchText}, () => {
-        this.searchFilter(dataName, metaData, 'cost');
+
+      else if (filterParam === 'cost') this.setState({SearchQueries: {
+        Name: this.state.SearchQueries.Name,
+        Gold: this.state.searchText,
+        Trait: this.state.SearchQueries.Trait,
+      }}, () => {
+        this.searchFilter(dataName, metaData);
       })
-      else if (filterParam == 'traits') this.setState({searchQueryTrait: this.state.searchText}, () => { this.searchFilter(dataName, metaData, 'traits');
+
+      else if (filterParam === 'traits') this.setState({SearchQueries: {
+        Name: this.state.SearchQueries.Name,
+        Gold: this.state.SearchQueries.Gold,
+        Trait: this.state.searchText,
+      }}, () => { this.searchFilter(dataName, metaData);
       })
     })
   };
 
-  searchFilter = (dataName, metaData, filterParam) => {
-    const newObj = this.state[dataName].filter(el => el[filterParam].toString().toLowerCase().includes(this.state.searchQueryName.toString().toLowerCase()));
+  searchFilter = (dataName, metaData) => {
+
+    const newObj = metaData.filter( el => 
+      el['name'].toString().toLowerCase().includes(this.state.SearchQueries.Name.toString().toLowerCase()) && 
+      el['cost'].toString().toLowerCase().includes(this.state.SearchQueries.Gold.toString().toLowerCase()) && 
+      el['traits'].toString().toLowerCase().includes(this.state.SearchQueries.Trait.toString().toLowerCase())
+      );
 
     this.setState({[dataName]: newObj})
   }
