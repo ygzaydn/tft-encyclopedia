@@ -7,6 +7,7 @@ import Item from './components/Item-component/Item'
 import Trait from './components/Trait-component/Trait'
 import Galaxy from './components/Galaxy-component/Galaxy'
 import Search from './components/Search-component/Search'
+import ItemMatrix from './components/ItemMatrix-component/ItemMatrix'
 
 import ChampionsMetaData from './assets/champions.json'
 import GalaxiesMetaData from './assets/galaxies.json'
@@ -24,6 +25,7 @@ class App extends Component {
         galaxies: false,
         items: false,
         traits: false,
+        itemMatrix: false,
       },
       Champions: ChampionsMetaData,
       Galaxies: GalaxiesMetaData,
@@ -43,7 +45,8 @@ class App extends Component {
       champions: true,
       galaxies: false,
       items: false,
-      traits: false }})
+      traits: false,
+      itemMatrix: false, }})
     console.log(this.state);
     console.log(this.state.Champions);
   }
@@ -53,7 +56,8 @@ class App extends Component {
       champions: false,
       galaxies: true,
       items: false,
-      traits: false }})
+      traits: false,
+      itemMatrix: false, }})
     console.log(this.state);
     console.log(this.state.Galaxies);
   }
@@ -63,7 +67,8 @@ class App extends Component {
       champions: false,
       galaxies: false,
       items: true,
-      traits: false }})
+      traits: false,
+      itemMatrix: false, }})
     console.log(this.state);
     console.log(this.state.Items);
   }
@@ -73,9 +78,21 @@ class App extends Component {
       champions: false,
       galaxies: false,
       items: false,
-      traits: true }})
+      traits: true,
+      itemMatrix: false, }})
     console.log(this.state);
     console.log(this.state.Traits);
+  }
+
+  getItemMatrix = () => {
+    this.setState({flags: {
+      champions: false,
+      galaxies: false,
+      items: false,
+      traits: false,
+      itemMatrix: true, }})
+    console.log(this.state);
+    console.log(this.state.Items);
   }
 
   fixSearchState = ( dataName, metaData, filterParam) => {
@@ -140,9 +157,12 @@ class App extends Component {
             name="Traits"
             click={this.getTraits}
           />
+          <MyButton
+            name="Item Matrix"
+            click={this.getItemMatrix}
+          />
         </div>
-        <div className="info-section">
-        
+        <div className="info-section">        
         {flags.champions?
           <div className="char-section">
             <a className="info-title">Champions</a>
@@ -221,11 +241,18 @@ class App extends Component {
               )
             })}
           </div>
-        :null}
+        : null}
+
+        {flags.itemMatrix?
+          <div className="item-matrix-section">
+            <ItemMatrix 
+              item={ItemsMetaData}
+            />
+          </div>
+        : null}
         </div>
       </div>
     );
   }
 }
-
 export default App;
