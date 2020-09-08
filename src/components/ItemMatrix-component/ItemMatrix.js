@@ -9,7 +9,7 @@ const ItemMatrix = ({changeStyle}) => {
     let counter=0;
     for (let i=0;i<=9;i++){
         row.push(
-        <ItemMatrixRow>
+        <ItemMatrixRow rowNumber={i}>
             <ItemMatrixColumn changeStyle={changeStyle}>{`${i}${counter}`}</ItemMatrixColumn>
             <ItemMatrixColumn changeStyle={changeStyle}>{`${i}${counter+1}`}</ItemMatrixColumn>
             <ItemMatrixColumn changeStyle={changeStyle}>{`${i}${counter+2}`}</ItemMatrixColumn>
