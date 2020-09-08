@@ -245,9 +245,7 @@ class App extends Component {
 
         {flags.itemMatrix?
           <div className="item-matrix-section">
-            <ItemMatrix 
-              item={ItemsMetaData}
-            />
+            <ItemMatrix />
           </div>
         : null}
         </div>

@@ -5,7 +5,10 @@ import './ItemMatrixColumn-style.css'
 const ItemMatrixColumn = ({children}) => {
     return (
         <div className="item-matrix-column">
-            {children}
+            <img 
+                className="item-image-column"
+                src={require(`../../../assets/items/${children}.png`)}
+            />
         </div>
     )
 }
