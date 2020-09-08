@@ -97,9 +97,8 @@ class App extends Component {
 
   changeStyles = (event) => {
     let element = event.target.id;
-    let elementFirstDigitClass = `row-${element%10}`;
-    let elementLastDigit = parseInt(element/10);
-    document.querySelectorAll(`.${elementFirstDigitClass}`).style = "filter: brightness(100%)";
+    let elementLastDigit = `row-${parseInt(element%10)}`;
+    document.querySelectorAll(`.${elementLastDigit}`).forEach(el => el.style = "filter: brightness(100%)")
     console.log(element)
    
     
