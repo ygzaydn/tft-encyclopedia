@@ -36,9 +36,11 @@ class App extends Component {
         Gold: '',
         Trait: '',
       },
-      searchText: ''
+      searchText: '',
+      modalIsOpen: false
     }
   }
+
 
   getChampions = () => {
     this.setState({flags: {

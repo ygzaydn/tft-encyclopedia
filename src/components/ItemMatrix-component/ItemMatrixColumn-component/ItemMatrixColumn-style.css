@@ -17,3 +17,8 @@
     transform: scale(1.25) !important;
     overflow: visible !important;
 }
+
+.item-matrix-row {
+    display: flex;
+    flex-direction: row;
+}

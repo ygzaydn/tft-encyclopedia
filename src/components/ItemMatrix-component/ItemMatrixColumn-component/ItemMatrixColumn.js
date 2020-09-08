@@ -1,20 +1,24 @@
-import React, {useRef} from 'react'
+import React from 'react'
 import './ItemMatrixColumn-style.css'
 
-
 const ItemMatrixColumn = ({children, changeStyle, rowNumber}) => {
+
     let par;
     children<=10 ? par=children : par=children;
-    const inputRef = useRef(par);
+    let isOpen=false;
+    console.log(isOpen);
     return (
-        <a className={`item-matrix-column row-${rowNumber} column-${par%10}`} onClick={changeStyle}>
-            <img 
-                className={`item-image-column`}
-                id={par}
-                src={require(`../../../assets/items/${parseInt(par)}.png`)}
-                ref={inputRef}
-            />
-        </a>
+        <div className="item-matrix-row">
+            <a className={`item-matrix-column row-${rowNumber} column-${par%10}`} onClick={changeStyle}>
+                <img 
+                    className={`item-image-column`}
+                    id={par}
+                    src={require(`../../../assets/items/${parseInt(par)}.png`)}
+                    onClick={()=> {isOpen=par; console.log(isOpen)} }
+                />
+            </a>
+        {isOpen? <h1>AMINA KOYIM BERKALP</h1>: null}
+        </div>
     )
 }
 
