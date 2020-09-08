@@ -99,13 +99,13 @@ class App extends Component {
     let element = event.target.id;
     let elementLastDigitRow = `row-${parseInt(element/10)}`;
     let elementLastDigitColumn = `column-${parseInt(element%10)}`;
-    document.querySelectorAll(`.${elementLastDigitRow}`).forEach(el => el.children.forEach(el => el.style = "filter: brightness(100%)"))
-    document.querySelectorAll(`.${elementLastDigitColumn}`).forEach(el => el.style = "filter: brightness(100%)")
-    console.log(element)
-    console.log(elementLastDigitRow)
-    console.log(elementLastDigitColumn)
-   
-    
+    for (let i=0;i<=9;i++){
+    document.querySelectorAll(`.row-${i}`).forEach(el => el.children[0].style =  "filter: brightness(50%)")
+    document.querySelectorAll(`.column${i}`).forEach(el => el.children[0].style =  "filter: brightness(50%)")
+    }
+    document.querySelectorAll(`.${elementLastDigitRow}`).forEach(el => el.children[0].style =  "filter: brightness(100%)")
+    document.querySelectorAll(`.${elementLastDigitColumn}`).forEach(el => el.children[0].style =  "filter: brightness(100%)")
+
   }
 
   fixSearchState = ( dataName, metaData, filterParam) => {

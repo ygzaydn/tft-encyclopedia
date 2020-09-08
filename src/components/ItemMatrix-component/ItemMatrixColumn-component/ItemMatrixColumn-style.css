@@ -1,9 +1,19 @@
 .item-image-column {
-    max-width: 90%;
-    height: auto;
+    max-width: 100%;
+    max-height: auto;
     filter: brightness(50%);
+    margin: 0 0.1vw 0 0;
+    overflow: hidden;
+    transition: 0.25s linear;
 }
 
 .item-image-column:hover {
     filter: brightness(100%);
+    overflow: visible !important;
+}
+
+.item-image-column:hover {
+    filter: brightness(100%) !important;
+    transform: scale(1.25) !important;
+    overflow: visible !important;
 }

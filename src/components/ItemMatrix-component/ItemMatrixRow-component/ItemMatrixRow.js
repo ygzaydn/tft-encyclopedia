@@ -2,10 +2,9 @@ import React from 'react'
 import './ItemMatrixRow-style.css'
 
 
-const ItemMatrixRow = ({children, rowNumber}) => {
-    const rowNum = `row-${rowNumber}`
+const ItemMatrixRow = ({children}) => {
     return (
-        <div className={`item-matrix-row ${rowNum}`}>
+        <div className={`item-matrix-row}`}>
             {children}
         </div>
     )
