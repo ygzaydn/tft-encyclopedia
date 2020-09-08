@@ -95,6 +95,12 @@ class App extends Component {
     console.log(this.state.Items);
   }
 
+  changeStyles = (event) => {
+    let element = event.target.id;
+    document.getElementById(`${element+1}`).style.filter= "brightness(100%)";
+    console.log(element)
+  }
+
   fixSearchState = ( dataName, metaData, filterParam) => {
     const e=window.event;
 
@@ -245,7 +251,9 @@ class App extends Component {
 
         {flags.itemMatrix?
           <div className="item-matrix-section">
-            <ItemMatrix />
+            <ItemMatrix 
+              changeStyle={this.changeStyles}
+            />
           </div>
         : null}
         </div>

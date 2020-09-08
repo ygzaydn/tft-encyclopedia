@@ -4,13 +4,13 @@ import ItemMatrixRow from './ItemMatrixRow-component/ItemMatrixRow'
 import ItemMatrixColumn from './ItemMatrixColumn-component/ItemMatrixColumn-component'
 
 
-const ItemMatrix = ({}) => {
+const ItemMatrix = ({changeStyle}) => {
     let row = [];
     let counter=0;
     for (let i=0;i<=9;i++){
         row.push(
         <ItemMatrixRow>
-            <ItemMatrixColumn>{`${i}${counter}`}</ItemMatrixColumn>
+            <ItemMatrixColumn changeStyle={changeStyle}>{`${i}${counter}`}</ItemMatrixColumn>
             <ItemMatrixColumn>{`${i}${counter+1}`}</ItemMatrixColumn>
             <ItemMatrixColumn>{`${i}${counter+2}`}</ItemMatrixColumn>
             <ItemMatrixColumn>{`${i}${counter+3}`}</ItemMatrixColumn>
