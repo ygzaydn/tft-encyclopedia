@@ -99,7 +99,7 @@ class App extends Component {
     let element = event.target.id;
     let elementLastDigitRow = `row-${parseInt(element/10)}`;
     let elementLastDigitColumn = `column-${parseInt(element%10)}`;
-    document.querySelectorAll(`.${elementLastDigitRow}`).forEach(el => el.style = "filter: brightness(100%)")
+    document.querySelectorAll(`.${elementLastDigitRow}`).forEach(el => el.children.forEach(el => el.style = "filter: brightness(100%)"))
     document.querySelectorAll(`.${elementLastDigitColumn}`).forEach(el => el.style = "filter: brightness(100%)")
     console.log(element)
     console.log(elementLastDigitRow)
