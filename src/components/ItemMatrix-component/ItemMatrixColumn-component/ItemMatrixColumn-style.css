@@ -1,4 +1,9 @@
 .item-image-column {
     max-width: 90%;
     height: auto;
+    filter: brightness(50%);
+}
+
+.item-image-column:hover {
+    filter: brightness(100%);
 }

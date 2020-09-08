@@ -6,8 +6,8 @@ import ItemMatrixColumn from './ItemMatrixColumn-component/ItemMatrixColumn-comp
 
 const ItemMatrix = ({}) => {
     let row = [];
-    let counter=1;
-    for (let i=1;i<=9;i++){
+    let counter=0;
+    for (let i=0;i<=9;i++){
         row.push(
         <ItemMatrixRow>
             <ItemMatrixColumn>{`${i}${counter}`}</ItemMatrixColumn>
@@ -19,6 +19,7 @@ const ItemMatrix = ({}) => {
             <ItemMatrixColumn>{`${i}${counter+6}`}</ItemMatrixColumn>
             <ItemMatrixColumn>{`${i}${counter+7}`}</ItemMatrixColumn>
             <ItemMatrixColumn>{`${i}${counter+8}`}</ItemMatrixColumn>
+            <ItemMatrixColumn>{`${i}${counter+9}`}</ItemMatrixColumn>
         </ItemMatrixRow>)
     }
     console.log(row)
