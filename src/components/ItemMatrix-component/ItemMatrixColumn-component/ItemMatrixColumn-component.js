@@ -1,17 +1,21 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import './ItemMatrixColumn-style.css'
 
 
 const ItemMatrixColumn = ({children}) => {
     let par;
-    children%10==0? par=children/10 : par=children;
+    children%10===0? par=children/10 : par=children;
+    const inputRef = useRef(par);
     return (
-        <div className="item-matrix-column">
+        <a className="item-matrix-column">
             <img 
                 className="item-image-column"
+                id={par}
                 src={require(`../../../assets/items/${parseInt(par)}.png`)}
+                onClick={(event)=> console.log(event.target.id)}
+                ref={inputRef}
             />
-        </div>
+        </a>
     )
 }
 
