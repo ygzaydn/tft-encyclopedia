@@ -9,7 +9,7 @@ const ItemMatrixColumn = ({children, changeStyle}) => {
     return (
         <a className="item-matrix-column" onClick={changeStyle}>
             <img 
-                className={`item-image-column row-${par}`}
+                className={`item-image-column column column-${par}`}
                 id={par}
                 src={require(`../../../assets/items/${parseInt(par)}.png`)}
                 ref={inputRef}
