@@ -17,7 +17,6 @@ const ItemMatrixColumn = ({children, changeStyle, rowNumber}) => {
                     onClick={()=> {isOpen=par; console.log(isOpen)} }
                 />
             </a>
-        {isOpen? <h1>AMINA KOYIM BERKALP</h1>: null}
         </div>
     )
 }

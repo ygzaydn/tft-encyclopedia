@@ -22,7 +22,6 @@ const ItemMatrix = ({changeStyle}) => {
             <ItemMatrixColumn rowNumber= {i} changeStyle={changeStyle}>{`${i}${counter+9}`}</ItemMatrixColumn>
         </ItemMatrixRow>)
     }
-    console.log(row)
     return (
         <div className="item-matrix">
             {row}
