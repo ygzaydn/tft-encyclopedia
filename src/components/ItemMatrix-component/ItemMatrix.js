@@ -11,15 +11,15 @@ const ItemMatrix = ({changeStyle}) => {
         row.push(
         <ItemMatrixRow>
             <ItemMatrixColumn changeStyle={changeStyle}>{`${i}${counter}`}</ItemMatrixColumn>
-            <ItemMatrixColumn>{`${i}${counter+1}`}</ItemMatrixColumn>
-            <ItemMatrixColumn>{`${i}${counter+2}`}</ItemMatrixColumn>
-            <ItemMatrixColumn>{`${i}${counter+3}`}</ItemMatrixColumn>
-            <ItemMatrixColumn>{`${i}${counter+4}`}</ItemMatrixColumn>
-            <ItemMatrixColumn>{`${i}${counter+5}`}</ItemMatrixColumn>
-            <ItemMatrixColumn>{`${i}${counter+6}`}</ItemMatrixColumn>
-            <ItemMatrixColumn>{`${i}${counter+7}`}</ItemMatrixColumn>
-            <ItemMatrixColumn>{`${i}${counter+8}`}</ItemMatrixColumn>
-            <ItemMatrixColumn>{`${i}${counter+9}`}</ItemMatrixColumn>
+            <ItemMatrixColumn changeStyle={changeStyle}>{`${i}${counter+1}`}</ItemMatrixColumn>
+            <ItemMatrixColumn changeStyle={changeStyle}>{`${i}${counter+2}`}</ItemMatrixColumn>
+            <ItemMatrixColumn changeStyle={changeStyle}>{`${i}${counter+3}`}</ItemMatrixColumn>
+            <ItemMatrixColumn changeStyle={changeStyle}>{`${i}${counter+4}`}</ItemMatrixColumn>
+            <ItemMatrixColumn changeStyle={changeStyle}>{`${i}${counter+5}`}</ItemMatrixColumn>
+            <ItemMatrixColumn changeStyle={changeStyle}>{`${i}${counter+6}`}</ItemMatrixColumn>
+            <ItemMatrixColumn changeStyle={changeStyle}>{`${i}${counter+7}`}</ItemMatrixColumn>
+            <ItemMatrixColumn changeStyle={changeStyle}>{`${i}${counter+8}`}</ItemMatrixColumn>
+            <ItemMatrixColumn changeStyle={changeStyle}>{`${i}${counter+9}`}</ItemMatrixColumn>
         </ItemMatrixRow>)
     }
     console.log(row)

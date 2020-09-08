@@ -97,8 +97,12 @@ class App extends Component {
 
   changeStyles = (event) => {
     let element = event.target.id;
-    document.getElementById(`${element+1}`).style.filter= "brightness(100%)";
+    let op = `row-${element}`
+    let elementClass = event.currentTarget.parentNode
+    document.querySelector(`.${op}`).style.filter= "brightness(100%)";
     console.log(element)
+    console.log(elementClass)
+    
   }
 
   fixSearchState = ( dataName, metaData, filterParam) => {
