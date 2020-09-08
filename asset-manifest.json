@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/tft-encyclopedia/static/css/main.f3d0936c.chunk.css",
-    "main.js": "/tft-encyclopedia/static/js/main.14b2a7bc.chunk.js",
-    "main.js.map": "/tft-encyclopedia/static/js/main.14b2a7bc.chunk.js.map",
+    "main.css": "/tft-encyclopedia/static/css/main.95e2bef5.chunk.css",
+    "main.js": "/tft-encyclopedia/static/js/main.308bcfb3.chunk.js",
+    "main.js.map": "/tft-encyclopedia/static/js/main.308bcfb3.chunk.js.map",
     "runtime-main.js": "/tft-encyclopedia/static/js/runtime-main.2b748469.js",
     "runtime-main.js.map": "/tft-encyclopedia/static/js/runtime-main.2b748469.js.map",
     "static/js/2.54a2a660.chunk.js": "/tft-encyclopedia/static/js/2.54a2a660.chunk.js",
     "static/js/2.54a2a660.chunk.js.map": "/tft-encyclopedia/static/js/2.54a2a660.chunk.js.map",
     "index.html": "/tft-encyclopedia/index.html",
-    "precache-manifest.b399449bacb92e73ab3d943443a7a1f0.js": "/tft-encyclopedia/precache-manifest.b399449bacb92e73ab3d943443a7a1f0.js",
+    "precache-manifest.1becc757926c0917ce4e32b5a8796332.js": "/tft-encyclopedia/precache-manifest.1becc757926c0917ce4e32b5a8796332.js",
     "service-worker.js": "/tft-encyclopedia/service-worker.js",
-    "static/css/main.f3d0936c.chunk.css.map": "/tft-encyclopedia/static/css/main.f3d0936c.chunk.css.map",
+    "static/css/main.95e2bef5.chunk.css.map": "/tft-encyclopedia/static/css/main.95e2bef5.chunk.css.map",
     "static/js/2.54a2a660.chunk.js.LICENSE.txt": "/tft-encyclopedia/static/js/2.54a2a660.chunk.js.LICENSE.txt",
     "static/media/38.png": "/tft-encyclopedia/static/media/38.32b4bfe1.png",
     "static/media/83.png": "/tft-encyclopedia/static/media/83.32b4bfe1.png",
@@ -79,7 +79,7 @@
   "entrypoints": [
     "static/js/runtime-main.2b748469.js",
     "static/js/2.54a2a660.chunk.js",
-    "static/css/main.f3d0936c.chunk.css",
-    "static/js/main.14b2a7bc.chunk.js"
+    "static/css/main.95e2bef5.chunk.css",
+    "static/js/main.308bcfb3.chunk.js"
   ]
 }
