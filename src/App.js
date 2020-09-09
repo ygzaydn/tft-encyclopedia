@@ -161,7 +161,14 @@ class App extends Component {
     : myId = (id%10)*10 + parseInt(id/10)
     )
     return (
-      ItemsMetaData.filter(el=> el.id==myId).map(el=> <a>{el.name}</a>)
+      ItemsMetaData.filter(el=> el.id==myId).map(el=> {
+        return (
+          <div className="item-matrix-item-section">
+            <a>{el.name}</a>
+            <a>{el.description}</a>
+          </div>
+        )
+      })
     )
   }
 
@@ -285,7 +292,7 @@ class App extends Component {
             : null}
           </div>
         : null}
-        
+
         </div>
       </div>
     );
