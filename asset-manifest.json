@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/tft-encyclopedia/static/css/main.95e2bef5.chunk.css",
-    "main.js": "/tft-encyclopedia/static/js/main.308bcfb3.chunk.js",
-    "main.js.map": "/tft-encyclopedia/static/js/main.308bcfb3.chunk.js.map",
+    "main.css": "/tft-encyclopedia/static/css/main.b45d275d.chunk.css",
+    "main.js": "/tft-encyclopedia/static/js/main.0774ba5d.chunk.js",
+    "main.js.map": "/tft-encyclopedia/static/js/main.0774ba5d.chunk.js.map",
     "runtime-main.js": "/tft-encyclopedia/static/js/runtime-main.2b748469.js",
     "runtime-main.js.map": "/tft-encyclopedia/static/js/runtime-main.2b748469.js.map",
-    "static/js/2.54a2a660.chunk.js": "/tft-encyclopedia/static/js/2.54a2a660.chunk.js",
-    "static/js/2.54a2a660.chunk.js.map": "/tft-encyclopedia/static/js/2.54a2a660.chunk.js.map",
+    "static/js/2.1e4b8335.chunk.js": "/tft-encyclopedia/static/js/2.1e4b8335.chunk.js",
+    "static/js/2.1e4b8335.chunk.js.map": "/tft-encyclopedia/static/js/2.1e4b8335.chunk.js.map",
     "index.html": "/tft-encyclopedia/index.html",
-    "precache-manifest.1becc757926c0917ce4e32b5a8796332.js": "/tft-encyclopedia/precache-manifest.1becc757926c0917ce4e32b5a8796332.js",
+    "precache-manifest.a2609e550ca3bda9f5e426f45707c0a1.js": "/tft-encyclopedia/precache-manifest.a2609e550ca3bda9f5e426f45707c0a1.js",
     "service-worker.js": "/tft-encyclopedia/service-worker.js",
-    "static/css/main.95e2bef5.chunk.css.map": "/tft-encyclopedia/static/css/main.95e2bef5.chunk.css.map",
-    "static/js/2.54a2a660.chunk.js.LICENSE.txt": "/tft-encyclopedia/static/js/2.54a2a660.chunk.js.LICENSE.txt",
+    "static/css/main.b45d275d.chunk.css.map": "/tft-encyclopedia/static/css/main.b45d275d.chunk.css.map",
+    "static/js/2.1e4b8335.chunk.js.LICENSE.txt": "/tft-encyclopedia/static/js/2.1e4b8335.chunk.js.LICENSE.txt",
     "static/media/38.png": "/tft-encyclopedia/static/media/38.32b4bfe1.png",
     "static/media/83.png": "/tft-encyclopedia/static/media/83.32b4bfe1.png",
     "static/media/TFT3_GameVariation_BigLittleLegends.png": "/tft-encyclopedia/static/media/TFT3_GameVariation_BigLittleLegends.ba597847.png",
@@ -78,8 +78,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2b748469.js",
-    "static/js/2.54a2a660.chunk.js",
-    "static/css/main.95e2bef5.chunk.css",
-    "static/js/main.308bcfb3.chunk.js"
+    "static/js/2.1e4b8335.chunk.js",
+    "static/css/main.b45d275d.chunk.css",
+    "static/js/main.0774ba5d.chunk.js"
   ]
 }
