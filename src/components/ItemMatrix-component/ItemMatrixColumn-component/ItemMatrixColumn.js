@@ -1,12 +1,10 @@
 import React from 'react'
 import './ItemMatrixColumn-style.css'
 
-const ItemMatrixColumn = ({children, changeStyle, rowNumber}) => {
+const ItemMatrixColumn = ({children, changeStyle, rowNumber, changeItemID}) => {
 
     let par;
     children<=10 ? par=children : par=children;
-    let isOpen=false;
-    console.log(isOpen);
     return (
         <div className="item-matrix-row">
             <a className={`item-matrix-column row-${rowNumber} column-${par%10}`} onClick={changeStyle}>
@@ -14,7 +12,7 @@ const ItemMatrixColumn = ({children, changeStyle, rowNumber}) => {
                     className={`item-image-column`}
                     id={par}
                     src={require(`../../../assets/items/${parseInt(par)}.png`)}
-                    onClick={()=> {isOpen=par; console.log(isOpen)} }
+                    onClick={changeItemID}
                 />
             </a>
         </div>

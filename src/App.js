@@ -37,7 +37,7 @@ class App extends Component {
         Trait: '',
       },
       searchText: '',
-      modalIsOpen: false
+      itemID: -1
     }
   }
 
@@ -137,7 +137,7 @@ class App extends Component {
       }}, () => { this.searchFilter(dataName, metaData);
       })
     })
-  };
+  }
 
   searchFilter = (dataName, metaData) => {
 
@@ -150,8 +150,24 @@ class App extends Component {
     this.setState({[dataName]: newObj})
   }
 
+  changeItemID = (event) => {
+    this.setState({itemID: event.target.id})
+  }
+
+  itemMatrixRender = (id) => {
+    let myId;
+    (id%10>=id/10 ?
+      myId = id
+    : myId = (id%10)*10 + parseInt(id/10)
+    )
+    return (
+      ItemsMetaData.filter(el=> el.id==myId).map(el=> <a>{el.name}</a>)
+    )
+  }
+
   render() {
-    const { flags, Champions, Galaxies, Items, Traits, searchText } = this.state;
+    const { flags, Champions, Galaxies, Items, Traits, searchText, itemID } = this.state;
+    
     return (
       <div className="main-page-section">
         <a className="title">TFT Encyclopedia</a>
@@ -262,12 +278,19 @@ class App extends Component {
           <div className="item-matrix-section">
             <ItemMatrix 
               changeStyle={this.changeStyles}
+              changeItemID={this.changeItemID}
             />
+            {itemID>=0 ? 
+              this.itemMatrixRender(itemID)
+            : null}
           </div>
         : null}
+        
         </div>
       </div>
     );
   }
 }
 export default App;
+
+// 

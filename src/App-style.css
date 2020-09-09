@@ -93,7 +93,8 @@ body {
 
 .item-matrix-section {
     display: flex;
+    flex-direction: column;
     flex-basis:100%;
     flex-wrap: nowrap;
-    justify-content: center;
+    align-items: center;
 }
