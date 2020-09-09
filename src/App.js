@@ -164,8 +164,8 @@ class App extends Component {
       ItemsMetaData.filter(el=> el.id==myId).map(el=> {
         return (
           <div className="item-matrix-item-section">
-            <a>{el.name}</a>
-            <a>{el.description}</a>
+            <a className="item-matrix-item-section-title">{el.name}</a>
+            <a className="item-matrix-item-section-description">{el.description}</a>
           </div>
         )
       })
