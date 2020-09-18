@@ -14,6 +14,10 @@ import ChampionsMetaData from './assets/set4/champions.json'
 import ItemsMetaData from './assets/set4/items.json'
 import TraitsMetaData from './assets/set4/traits.json'
 
+import ChampionsMetaData3 from './assets/set3/champions.json'
+import ItemsMetaData3 from './assets/set3/items.json'
+import TraitsMetaData3 from './assets/set3/traits.json'
+
 
 class App extends Component {
 
@@ -35,7 +39,8 @@ class App extends Component {
         Trait: '',
       },
       searchText: '',
-      itemID: -1
+      itemID: -1,
+      set: 4
     }
     this.inputRef = React.createRef();
   }
@@ -47,7 +52,7 @@ class App extends Component {
   handleScroll = () => {
     let titleBar = document.querySelector('.info-title');
     let oldStyle = document.querySelector('.info-title').style;
-    if(window.pageYOffset>window.innerHeight/5){
+    if(window.pageYOffset>window.innerHeight/7){
       
       titleBar.style="background-color: #F05D23;border-color: #F05D23;color:white;border:none;border-radius:0;"
     } else {
@@ -56,6 +61,7 @@ class App extends Component {
   }
 
   getChampions = () => {
+    
     this.setState({flags: {
       champions: true,
       items: false,
@@ -164,10 +170,10 @@ class App extends Component {
   }
 
   render() {
-    const { flags, Champions, Galaxies, Items, Traits, searchText, itemID } = this.state;
+    const { flags, Champions, Galaxies, Items, Traits, searchText, itemID, set } = this.state;
     return (
       <div className="main-page-section">
-        <a className="title">TFT Encyclopedia - set4
+        <a className="title">TFT Encyclopedia - set{set}
           <Link to="/set3" className="link">Switch to Set 3</Link>
         </a>
         <div className="button-section">
