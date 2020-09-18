@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "35bb10320c5d68861b40ba3a76981173",
+    "revision": "1d6807b53c24fbc99001ef28c5e73e09",
     "url": "/tft-encyclopedia/index.html"
   },
   {
-    "revision": "9e370fe28de44ef64a07",
-    "url": "/tft-encyclopedia/static/css/main.92e07dd2.chunk.css"
+    "revision": "c8a0555a805e30dd6eba",
+    "url": "/tft-encyclopedia/static/css/main.9952991c.chunk.css"
   },
   {
-    "revision": "54617b2b4500078c0873",
-    "url": "/tft-encyclopedia/static/js/2.1e4b8335.chunk.js"
+    "revision": "bc53b80c99042e77e7ca",
+    "url": "/tft-encyclopedia/static/js/2.d0dc08d0.chunk.js"
   },
   {
-    "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/tft-encyclopedia/static/js/2.1e4b8335.chunk.js.LICENSE.txt"
+    "revision": "c64c486544348f10a6d6c716950bc223",
+    "url": "/tft-encyclopedia/static/js/2.d0dc08d0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9e370fe28de44ef64a07",
-    "url": "/tft-encyclopedia/static/js/main.e52abddd.chunk.js"
+    "revision": "c8a0555a805e30dd6eba",
+    "url": "/tft-encyclopedia/static/js/main.4481d56c.chunk.js"
   },
   {
     "revision": "745e00794b458272ef56",
@@ -70,6 +70,190 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0153e3346a8945f388bf8bad98a771d0",
     "url": "/tft-encyclopedia/static/media/TFT3_GameVariation_TwoStarCarousels.0153e334.png"
+  },
+  {
+    "revision": "e6aeb809c4c14f7837db8c9d1549c1c4",
+    "url": "/tft-encyclopedia/static/media/TFT4_Aatrox.e6aeb809.png"
+  },
+  {
+    "revision": "9020f622d9e19dc6300ac17577f573a3",
+    "url": "/tft-encyclopedia/static/media/TFT4_Ahri.9020f622.png"
+  },
+  {
+    "revision": "34a03d36b213ae03f4ad8da9affcb285",
+    "url": "/tft-encyclopedia/static/media/TFT4_Akali.34a03d36.png"
+  },
+  {
+    "revision": "b2718ad4f12858d0fae53b93a3dcdfd7",
+    "url": "/tft-encyclopedia/static/media/TFT4_Annie.b2718ad4.png"
+  },
+  {
+    "revision": "3ae67d61cbc48ba691a4d99512cf89d9",
+    "url": "/tft-encyclopedia/static/media/TFT4_Ashe.3ae67d61.png"
+  },
+  {
+    "revision": "253acfdcad3cdc0c79afebd99fadaefd",
+    "url": "/tft-encyclopedia/static/media/TFT4_Elise.253acfdc.png"
+  },
+  {
+    "revision": "288007d2af7d16d353bc639dfa53a5a5",
+    "url": "/tft-encyclopedia/static/media/TFT4_Evelynn.288007d2.png"
+  },
+  {
+    "revision": "a70ee3780e8d1fb5b610736cf39b91b6",
+    "url": "/tft-encyclopedia/static/media/TFT4_Ezreal.a70ee378.png"
+  },
+  {
+    "revision": "6063336572a021b778aba216d5bd3645",
+    "url": "/tft-encyclopedia/static/media/TFT4_Fiora.60633365.png"
+  },
+  {
+    "revision": "d59e9181dd4b6cf99cce7143ac55b2c1",
+    "url": "/tft-encyclopedia/static/media/TFT4_Garen.d59e9181.png"
+  },
+  {
+    "revision": "f5f1d88d19e9adf25c49ce8d50db993d",
+    "url": "/tft-encyclopedia/static/media/TFT4_Hecarim.f5f1d88d.png"
+  },
+  {
+    "revision": "cf7dc3c98e937c05673fd56c0d39a958",
+    "url": "/tft-encyclopedia/static/media/TFT4_Irelia.cf7dc3c9.png"
+  },
+  {
+    "revision": "22d618cf3a23b283e39960f03a8b589a",
+    "url": "/tft-encyclopedia/static/media/TFT4_Janna.22d618cf.png"
+  },
+  {
+    "revision": "200858c56611c532a02421dda93d071b",
+    "url": "/tft-encyclopedia/static/media/TFT4_Jax.200858c5.png"
+  },
+  {
+    "revision": "fdf823c136cf7c3d069927b6cd48a7d5",
+    "url": "/tft-encyclopedia/static/media/TFT4_Jhin.fdf823c1.png"
+  },
+  {
+    "revision": "b7c774f16c61ba61618fad275e091a32",
+    "url": "/tft-encyclopedia/static/media/TFT4_Jinx.b7c774f1.png"
+  },
+  {
+    "revision": "709b53c86565c56693a634a965cb2dac",
+    "url": "/tft-encyclopedia/static/media/TFT4_Kalista.709b53c8.png"
+  },
+  {
+    "revision": "5bee508c37152d54cbc853e15646f94c",
+    "url": "/tft-encyclopedia/static/media/TFT4_Kayn.5bee508c.png"
+  },
+  {
+    "revision": "0249e743d7ced4650de93a66c893d7ae",
+    "url": "/tft-encyclopedia/static/media/TFT4_Kennen.0249e743.png"
+  },
+  {
+    "revision": "81ca2828bd0511a9a8d2d2777931927f",
+    "url": "/tft-encyclopedia/static/media/TFT4_Kindred.81ca2828.png"
+  },
+  {
+    "revision": "97f6f9897e1e3f9a9c579058878759f0",
+    "url": "/tft-encyclopedia/static/media/TFT4_LeeSin.97f6f989.png"
+  },
+  {
+    "revision": "5b87a54f9be9e2b9bab6c533a22b44c7",
+    "url": "/tft-encyclopedia/static/media/TFT4_Lillia.5b87a54f.png"
+  },
+  {
+    "revision": "a54d62878aa9d2da292b7a561391e244",
+    "url": "/tft-encyclopedia/static/media/TFT4_Lissandra.a54d6287.png"
+  },
+  {
+    "revision": "e93d0bffbda92252f7bcce5eeb902453",
+    "url": "/tft-encyclopedia/static/media/TFT4_Lulu.e93d0bff.png"
+  },
+  {
+    "revision": "4d4f6f9a2d3de7ccfc7efca9eb88e59d",
+    "url": "/tft-encyclopedia/static/media/TFT4_Lux.4d4f6f9a.png"
+  },
+  {
+    "revision": "3fc637addfb45968c0a97749bd6e7db9",
+    "url": "/tft-encyclopedia/static/media/TFT4_Maokai.3fc637ad.png"
+  },
+  {
+    "revision": "c2ed3c8023cba316c89650cdb872a464",
+    "url": "/tft-encyclopedia/static/media/TFT4_Morgana.c2ed3c80.png"
+  },
+  {
+    "revision": "5e2eaaf8b595493cb358660d0dcfb29f",
+    "url": "/tft-encyclopedia/static/media/TFT4_Nunu.5e2eaaf8.png"
+  },
+  {
+    "revision": "0bc32d1952c6f8a4d8b59e9e77c4b3a7",
+    "url": "/tft-encyclopedia/static/media/TFT4_Riven.0bc32d19.png"
+  },
+  {
+    "revision": "76a0ecd2bafe4d46deb1cde6f8e426cf",
+    "url": "/tft-encyclopedia/static/media/TFT4_Sejuani.76a0ecd2.png"
+  },
+  {
+    "revision": "81cc7a39eeb5407e3d176b54d7775f95",
+    "url": "/tft-encyclopedia/static/media/TFT4_Sett.81cc7a39.png"
+  },
+  {
+    "revision": "b5e461ffe4f90a09e956e2cefd51e307",
+    "url": "/tft-encyclopedia/static/media/TFT4_Shen.b5e461ff.png"
+  },
+  {
+    "revision": "b767e5d86f893e1245304b20daebc48d",
+    "url": "/tft-encyclopedia/static/media/TFT4_TahmKench.b767e5d8.png"
+  },
+  {
+    "revision": "0aef53a9ea3645dd987a50bdda8e5d8c",
+    "url": "/tft-encyclopedia/static/media/TFT4_Talon.0aef53a9.png"
+  },
+  {
+    "revision": "a1a1547e938db38cb4f5804897d8270b",
+    "url": "/tft-encyclopedia/static/media/TFT4_Teemo.a1a1547e.png"
+  },
+  {
+    "revision": "ca6cbff1160be27ffbdc3440d5cd6d0b",
+    "url": "/tft-encyclopedia/static/media/TFT4_Thresh.ca6cbff1.png"
+  },
+  {
+    "revision": "db4c824ce41e5ba60769fba533c4caf8",
+    "url": "/tft-encyclopedia/static/media/TFT4_Veigar.db4c824c.png"
+  },
+  {
+    "revision": "54a249a0de67eb2fcf051dbe305bc465",
+    "url": "/tft-encyclopedia/static/media/TFT4_Vi.54a249a0.png"
+  },
+  {
+    "revision": "3014b1252a0e6ba0035a42857549994d",
+    "url": "/tft-encyclopedia/static/media/TFT4_Warwick.3014b125.png"
+  },
+  {
+    "revision": "0850df226f60fc35262add08a2458e29",
+    "url": "/tft-encyclopedia/static/media/TFT4_Wukong.0850df22.png"
+  },
+  {
+    "revision": "d202ef05fdebd64f8d3377e85abcb7b7",
+    "url": "/tft-encyclopedia/static/media/TFT4_XinZhao.d202ef05.png"
+  },
+  {
+    "revision": "3b6aca69cfd5c2d858cf5ed1eca132ef",
+    "url": "/tft-encyclopedia/static/media/TFT4_Yasuo.3b6aca69.png"
+  },
+  {
+    "revision": "ebab30cae2dc2f274d5454dd5f29a936",
+    "url": "/tft-encyclopedia/static/media/TFT4_Yone.ebab30ca.png"
+  },
+  {
+    "revision": "7dd4be3c0ea818364cf2bf47c063f723",
+    "url": "/tft-encyclopedia/static/media/TFT4_Yuumi.7dd4be3c.png"
+  },
+  {
+    "revision": "967001a6fc11d91f26c97662a31362bf",
+    "url": "/tft-encyclopedia/static/media/TFT4_Zed.967001a6.png"
+  },
+  {
+    "revision": "11ef2e154fbda8f9269fdcc2cb5b9fd5",
+    "url": "/tft-encyclopedia/static/media/TFT4_Zilean.11ef2e15.png"
   },
   {
     "revision": "1fd0f160b2119eca1f16c97b1bfbb094",
