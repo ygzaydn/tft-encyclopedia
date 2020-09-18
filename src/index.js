@@ -8,7 +8,7 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <div>
+
         <Switch>
           <Route exact path="/">
             <Set3 />
@@ -17,7 +17,7 @@ ReactDOM.render(
             <Set3 />
           </Route>
         </Switch>
-      </div>
+
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
