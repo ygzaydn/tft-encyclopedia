@@ -209,6 +209,8 @@ class App extends Component {
 
   render() {
     const { flags, Champions, Galaxies, Items, Traits, searchText, itemID, set } = this.state;
+    let MetaData;
+    set === 4 ? MetaData=ChampionsMetaData : MetaData=ChampionsMetaData3
     return (
       <div className="main-page-section">
         <a className="title">TFT Encyclopedia - set{set}
@@ -246,17 +248,17 @@ class App extends Component {
             <Search 
               placeholder="Filter by name"
               value={searchText}
-              searchFunction={()=>this.fixSearchState('Champions', ChampionsMetaData, 'name')}
+              searchFunction={()=>this.fixSearchState('Champions', MetaData, 'name')}
             />
             <Search 
               placeholder="Filter by cost"
               value={searchText}
-              searchFunction={()=>this.fixSearchState('Champions', ChampionsMetaData, 'cost')}
+              searchFunction={()=>this.fixSearchState('Champions', MetaData, 'cost')}
             />
             <Search 
               placeholder="Filter by traits"
               value={searchText}
-              searchFunction={()=>this.fixSearchState('Champions', ChampionsMetaData, 'traits')}
+              searchFunction={()=>this.fixSearchState('Champions', MetaData, 'traits')}
             />
             </div>
             
