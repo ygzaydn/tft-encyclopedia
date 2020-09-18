@@ -14,6 +14,9 @@ ReactDOM.render(
           <Route exact path="/">
             <Set4 />
           </Route>
+          <Route exact path="/tft-encyclopedia">
+            <Set4 />
+          </Route>
           <Route path="/set3">
             <Set3 />
           </Route>
