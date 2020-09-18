@@ -42,9 +42,8 @@ body {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 5% 5% 0 5%;
     justify-content: center;
-    padding: 1vh 2vh 1vh 2vh;
+    padding: 1vh 0 1vh 0;
 }
 
 .galaxy-section{
@@ -53,7 +52,7 @@ body {
     flex-wrap: wrap;
     padding: 5% 5% 0 5%;
     justify-content: center;
-    padding: 1vh 2vh 1vh 2vh;
+    padding: 1vh 0 1vh 0;
 }
 
 .info-title {
@@ -77,7 +76,7 @@ body {
     flex-wrap: wrap;
     padding: 5% 5% 0 5%;
     justify-content: center;
-    padding: 1vh 2vh 1vh 2vh;
+    padding: 1vh 0 1vh 0;
 }
 
 .traits-section {
@@ -86,7 +85,7 @@ body {
     flex-wrap: wrap;
     padding: 5% 5% 0 5%;
     justify-content: center;
-    padding: 1vh 2vh 1vh 2vh;
+    padding: 1vh 0 1vh 0;
 }
 
 .search-section {

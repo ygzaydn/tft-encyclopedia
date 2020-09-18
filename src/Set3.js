@@ -47,14 +47,13 @@ class App extends Component {
   }
 
   handleScroll = () => {
-    let x = document.querySelector('.info-title');
-    let old = document.querySelector('.info-title').style;
-    console.log(old)
-    if(window.pageYOffset){
+    let titleBar = document.querySelector('.info-title');
+    let oldStyle = document.querySelector('.info-title').style;
+    if(window.pageYOffset>window.innerHeight/5){
       
-      x.style="background-color: #F05D23;border-color: #F05D23;color:white;border:none;border-radius:0;"
+      titleBar.style="background-color: #F05D23;border-color: #F05D23;color:white;border:none;border-radius:0;"
     } else {
-      x.style=old;
+      titleBar.style=oldStyle;
     }
   }
 
