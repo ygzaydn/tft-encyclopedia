@@ -53,13 +53,16 @@ class App extends Component {
 
   handleScroll = () => {
     let titleBar = document.querySelector('.info-title');
-    let oldStyle = document.querySelector('.info-title').style;
+    if(document.querySelector('.info-title')){
+      let oldStyle = document.querySelector('.info-title').style;
     if(window.pageYOffset>window.innerHeight/7){
       
       titleBar.style="background-color: #F05D23;border-color: #F05D23;color:white;border:none;border-radius:0;"
     } else {
       titleBar.style=oldStyle;
     }
+    }
+    
   }
 
 
