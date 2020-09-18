@@ -42,6 +42,21 @@ class App extends Component {
     }
   }
 
+  componentDidMount(){
+     window.addEventListener("scroll", this.handleScroll);
+  }
+
+  handleScroll = () => {
+    let x = document.querySelector('.info-title');
+    let old = document.querySelector('.info-title').style;
+    console.log(old)
+    if(window.pageYOffset){
+      
+      x.style="background-color: #F05D23;border-color: #F05D23;color:white;border:none;border-radius:0;"
+    } else {
+      x.style=old;
+    }
+  }
 
   getChampions = () => {
     this.setState({flags: {

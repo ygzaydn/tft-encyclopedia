@@ -37,8 +37,25 @@ class App extends Component {
       searchText: '',
       itemID: -1
     }
+    this.inputRef = React.createRef();
   }
 
+  componentDidMount(){
+     window.addEventListener("scroll", this.handleScroll);
+  }
+
+  handleScroll = () => {
+    let x = document.querySelector('.info-title');
+    let old = document.querySelector('.info-title').style;
+    console.log(old)
+    if(window.pageYOffset){
+      
+      x.style="background-color: #F05D23;border-color: #F05D23;color:white;border:none;border-radius:0;"
+    } else {
+      x.style=old;
+    }
+  }
+  
   getChampions = () => {
     this.setState({flags: {
       champions: true,
@@ -175,7 +192,7 @@ class App extends Component {
         <div className="info-section">        
         {flags.champions?
           <div className="char-section">
-            <a className="info-title">Champions</a>
+            <a className="info-title" ref={this.inputRef}>Champions</a>
             <div className="search-section">
             <Search 
               placeholder="Filter by name"
