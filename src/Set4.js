@@ -240,7 +240,7 @@ class App extends Component {
                   key={el.key}
                   description={el.description}
                   imgId={el.key}
-                  set={3}
+                  set={4}
                   />
               )
             })}
@@ -252,7 +252,7 @@ class App extends Component {
             <ItemMatrix 
               changeStyle={this.changeStyles}
               changeItemID={this.changeItemID}
-              set={3}
+              set={4}
             />
             {itemID>=0 ? 
               this.itemMatrixRender(itemID)

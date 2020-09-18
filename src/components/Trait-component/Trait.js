@@ -4,7 +4,9 @@ import './Trait-style.css'
 const Trait = ({name, imgId, description, set}) => {
     if(imgId.includes('Set3_')){
         imgId = imgId.slice(5);
-    }
+    } else if(imgId.includes('Set4_')){
+        imgId = imgId.slice(5);
+    } 
     imgId = imgId.toLowerCase();
     return (
         <div className="trait-card">
