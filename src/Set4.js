@@ -8,7 +8,6 @@ import Trait from './components/Trait-component/Trait'
 import Galaxy from './components/Galaxy-component/Galaxy'
 import Search from './components/Search-component/Search'
 import ItemMatrix from './components/ItemMatrix-component/ItemMatrix'
-import { Link } from 'react-router-dom';
 
 import ChampionsMetaData from './assets/set4/champions.json'
 import ItemsMetaData from './assets/set4/items.json'
@@ -17,6 +16,7 @@ import TraitsMetaData from './assets/set4/traits.json'
 import ChampionsMetaData3 from './assets/set3/champions.json'
 import ItemsMetaData3 from './assets/set3/items.json'
 import TraitsMetaData3 from './assets/set3/traits.json'
+import GalaxiesMetaData3 from './assets/set3/galaxies.json'
 
 
 class App extends Component {
@@ -29,10 +29,12 @@ class App extends Component {
         items: false,
         traits: false,
         itemMatrix: false,
+        galaxies: false,
       },
       Champions: ChampionsMetaData,
       Items: ItemsMetaData,
       Traits: TraitsMetaData,
+      Galaxies: {},
       SearchQueries: {
         Name: '',
         Gold: '',
@@ -60,29 +62,45 @@ class App extends Component {
     }
   }
 
+
   getChampions = () => {
-    
     this.setState({flags: {
       champions: true,
+      galaxies: false,
       items: false,
       traits: false,
       itemMatrix: false, }})
+
+  }
+
+  getGalaxies = () => {
+    this.setState({flags: {
+      champions: false,
+      galaxies: true,
+      items: false,
+      traits: false,
+      itemMatrix: false, }})
+
   }
 
   getItems = () => {
     this.setState({flags: {
       champions: false,
+      galaxies: false,
       items: true,
       traits: false,
       itemMatrix: false, }})
+
   }
 
   getTraits = () => {
     this.setState({flags: {
       champions: false,
+      galaxies: false,
       items: false,
       traits: true,
       itemMatrix: false, }})
+
   }
 
   getItemMatrix = () => {
@@ -169,12 +187,32 @@ class App extends Component {
     )
   }
 
+  changeSet = () => {
+    const { set } = this.state;
+    set===4 
+    ? this.setState(
+      { set: 3,
+      flags: {
+        galaxies: false
+      },
+       Champions: ChampionsMetaData3,
+       Items: ItemsMetaData3,
+       Traits: TraitsMetaData3,
+       Galaxies: GalaxiesMetaData3
+       }) 
+    : this.setState(
+      { set: 4,
+       Champions: ChampionsMetaData,
+       Items: ItemsMetaData,
+       Traits: TraitsMetaData })
+  }
+
   render() {
     const { flags, Champions, Galaxies, Items, Traits, searchText, itemID, set } = this.state;
     return (
       <div className="main-page-section">
         <a className="title">TFT Encyclopedia - set{set}
-          <Link to="/set3" className="link">Switch to Set 3</Link>
+          <button onClick={this.changeSet} className="link">Change Set</button>
         </a>
         <div className="button-section">
           <MyButton
@@ -185,6 +223,12 @@ class App extends Component {
             name="Items"
             click={this.getItems}
           />
+          {set===3
+          ?<MyButton
+            name="Galaxies"
+            click={this.getGalaxies}
+          />
+          : null}
           <MyButton
             name="Traits"
             click={this.getTraits}
@@ -224,7 +268,7 @@ class App extends Component {
                   traits={el.traits}
                   championId={el.championId}
                   key={el.championId}
-                  set={4} />
+                  set={set} />
               );
             })}
           </div>
@@ -240,12 +284,45 @@ class App extends Component {
                   key={el.id}
                   imgId={el.id}
                   description={el.description}
-                  set={4}
+                  set={set}
                  />
               )
             })}
           </div>
         : null}
+
+        {flags.galaxies?
+          <div className="galaxy-section">
+            <a className="info-title">Galaxies</a>
+            {Galaxies.map(el => {
+              return (
+                <Galaxy
+                  name={el.name}
+                  key={el.key}
+                  description={el.description}
+                  imgId={el.key} />
+              )
+            })}
+          </div>
+        : null}
+
+        {flags.items?
+          <div className="items-section">
+            <a className="info-title">Items</a>
+            {Items.map(el => {
+              return (
+                <Item
+                  name={el.name}
+                  key={el.id}
+                  imgId={el.id}
+                  description={el.description}
+                  set={3}
+                 />
+              )
+            })}
+          </div>
+        : null}
+
 
         {flags.traits?
           <div className="traits-section">
@@ -257,7 +334,7 @@ class App extends Component {
                   key={el.key}
                   description={el.description}
                   imgId={el.key}
-                  set={4}
+                  set={set}
                   />
               )
             })}
@@ -269,7 +346,7 @@ class App extends Component {
             <ItemMatrix 
               changeStyle={this.changeStyles}
               changeItemID={this.changeItemID}
-              set={4}
+              set={set}
             />
             {itemID>=0 ? 
               this.itemMatrixRender(itemID)
