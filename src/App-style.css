@@ -19,6 +19,8 @@ body {
 
 .title {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     margin: 1vh 0 1vh 0;
     background-color: #F05D23;
@@ -128,9 +130,9 @@ body {
 }
 
 .link {
-    position: absolute;
     color:white;
-    left: 90vw;
     font-size: 50%;
     width: 100%;
+    word-break: break-all;
+    text-align: center;
 }
