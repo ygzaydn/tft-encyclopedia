@@ -1,7 +1,7 @@
 import React from 'react'
 import './ItemMatrixColumn-style.css'
 
-const ItemMatrixColumn = ({children, changeStyle, rowNumber, changeItemID}) => {
+const ItemMatrixColumn = ({children, changeStyle, rowNumber, changeItemID, set}) => {
 
     let par;
     children<=10 ? par=children : par=children;
@@ -11,7 +11,7 @@ const ItemMatrixColumn = ({children, changeStyle, rowNumber, changeItemID}) => {
                 <img 
                     className={`item-image-column`}
                     id={par}
-                    src={require(`../../../assets/items/${parseInt(par)}.png`)}
+                    src={require(`../../../assets/set${set}/items/${parseInt(par)}.png`)}
                     onClick={changeItemID}
                 />
             </a>

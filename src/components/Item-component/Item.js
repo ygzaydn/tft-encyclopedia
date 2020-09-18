@@ -1,25 +1,25 @@
 import React from 'react';
 import './Item-style.css'
 
-const Item = ({ name, imgId, description }) => {
+const Item = ({ name, imgId, description,set }) => {
     return (
         <div className="item-card">
             <a className="item-name">{name}</a>
             <img 
                 className="item-image"
-                src={require(`../../assets/items/${imgId}.png`)}
+                src={require(`../../assets/set${3}/items/${imgId}.png`)}
             />
             <a className="item-description">{description}</a>
             {imgId>10? 
             <div className="item-subimage-section">
                 <img 
                     className="item-subimage"
-                    src={require(`../../assets/items/${parseInt((imgId/10))}.png`)}
+                    src={require(`../../assets/set${3}/items/${parseInt((imgId/10))}.png`)}
                 />
                 <a className="plus">+</a>
                 <img 
                     className="item-subimage"
-                    src={require(`../../assets/items/${imgId%10}.png`)}
+                    src={require(`../../assets/set${3}/items/${imgId%10}.png`)}
                 />
             </div>
             :

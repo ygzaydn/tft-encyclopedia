@@ -1,7 +1,7 @@
 import React from 'react'
 import './Trait-style.css'
 
-const Trait = ({name, imgId, description}) => {
+const Trait = ({name, imgId, description, set}) => {
     if(imgId.includes('Set3_')){
         imgId = imgId.slice(5);
     }
@@ -11,7 +11,7 @@ const Trait = ({name, imgId, description}) => {
             <a className="trait-name">{name}</a>
             <img 
                 className="trait-image"
-                src={require(`../../assets/traits/${imgId}.png`)}
+                src={require(`../../assets/set${set}/traits/${imgId}.png`)}
             />
             <a className="trait-description">{description}</a>
         </div>

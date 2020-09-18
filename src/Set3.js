@@ -9,10 +9,10 @@ import Galaxy from './components/Galaxy-component/Galaxy'
 import Search from './components/Search-component/Search'
 import ItemMatrix from './components/ItemMatrix-component/ItemMatrix'
 
-import ChampionsMetaData from './assets/champions.json'
-import GalaxiesMetaData from './assets/galaxies.json'
-import ItemsMetaData from './assets/items.json'
-import TraitsMetaData from './assets/traits.json'
+import ChampionsMetaData from './assets/set3/champions.json'
+import GalaxiesMetaData from './assets/set3/galaxies.json'
+import ItemsMetaData from './assets/set3/items.json'
+import TraitsMetaData from './assets/set3/traits.json'
 
 
 class App extends Component {
@@ -228,7 +228,8 @@ class App extends Component {
                   name={el.name}
                   cost={el.cost}
                   traits={el.traits}
-                  key={el.championId} />
+                  key={el.championId}
+                  set={3} />
               );
             })}
           </div>
@@ -259,6 +260,7 @@ class App extends Component {
                   key={el.id}
                   imgId={el.id}
                   description={el.description}
+                  set={3}
                  />
               )
             })}
@@ -275,6 +277,7 @@ class App extends Component {
                   key={el.key}
                   description={el.description}
                   imgId={el.key}
+                  set={3}
                   />
               )
             })}
@@ -286,6 +289,7 @@ class App extends Component {
             <ItemMatrix 
               changeStyle={this.changeStyles}
               changeItemID={this.changeItemID}
+              set={3}
             />
             {itemID>=0 ? 
               this.itemMatrixRender(itemID)

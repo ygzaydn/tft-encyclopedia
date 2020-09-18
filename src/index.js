@@ -1,7 +1,7 @@
 import React, {Modal} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Set3 from './App';
+import Set3 from './Set3';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 

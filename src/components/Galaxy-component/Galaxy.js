@@ -9,7 +9,7 @@ const Galaxy = ({name, imgId, description }) => {
             <a className="galaxy-name">{name}</a>
             <img 
                 className="galaxy-image"
-                src={require(`../../assets/galaxies/${imgId}.png`)}
+                src={require(`../../assets/set3/galaxies/${imgId}.png`)}
             />
             <a className="galaxy-description">{description}</a>
         </div>
