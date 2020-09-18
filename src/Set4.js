@@ -223,7 +223,7 @@ class App extends Component {
                   key={el.id}
                   imgId={el.id}
                   description={el.description}
-                  set={3}
+                  set={4}
                  />
               )
             })}

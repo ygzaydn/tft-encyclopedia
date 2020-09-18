@@ -7,19 +7,19 @@ const Item = ({ name, imgId, description,set }) => {
             <a className="item-name">{name}</a>
             <img 
                 className="item-image"
-                src={require(`../../assets/set${3}/items/${imgId}.png`)}
+                src={require(`../../assets/set${set}/items/${imgId}.png`)}
             />
             <a className="item-description">{description}</a>
             {imgId>10? 
             <div className="item-subimage-section">
                 <img 
                     className="item-subimage"
-                    src={require(`../../assets/set${3}/items/${parseInt((imgId/10))}.png`)}
+                    src={require(`../../assets/set${set}/items/${parseInt((imgId/10))}.png`)}
                 />
                 <a className="plus">+</a>
                 <img 
                     className="item-subimage"
-                    src={require(`../../assets/set${3}/items/${imgId%10}.png`)}
+                    src={require(`../../assets/set${set}/items/${imgId%10}.png`)}
                 />
             </div>
             :
