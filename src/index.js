@@ -2,6 +2,7 @@ import React, {Modal} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Set3 from './Set3';
+import Set4 from './Set4'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 
@@ -11,7 +12,7 @@ ReactDOM.render(
 
         <Switch>
           <Route exact path="/">
-            <Set3 />
+            <Set4 />
           </Route>
           <Route path="/set3">
             <Set3 />
