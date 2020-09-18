@@ -188,6 +188,7 @@ class App extends Component {
   }
 
   changeSet = () => {
+    document.querySelectorAll('.search-bar').forEach(el => el.value ='')
     const { set } = this.state;
     set===4 
     ? this.setState(
