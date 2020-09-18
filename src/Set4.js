@@ -8,6 +8,7 @@ import Trait from './components/Trait-component/Trait'
 import Galaxy from './components/Galaxy-component/Galaxy'
 import Search from './components/Search-component/Search'
 import ItemMatrix from './components/ItemMatrix-component/ItemMatrix'
+import { Link } from 'react-router-dom';
 
 import ChampionsMetaData from './assets/set4/champions.json'
 import ItemsMetaData from './assets/set4/items.json'
@@ -44,8 +45,6 @@ class App extends Component {
       items: false,
       traits: false,
       itemMatrix: false, }})
-    console.log(this.state);
-    console.log(this.state.Champions);
   }
 
   getItems = () => {
@@ -54,8 +53,6 @@ class App extends Component {
       items: true,
       traits: false,
       itemMatrix: false, }})
-    console.log(this.state);
-    console.log(this.state.Items);
   }
 
   getTraits = () => {
@@ -64,8 +61,6 @@ class App extends Component {
       items: false,
       traits: true,
       itemMatrix: false, }})
-    console.log(this.state);
-    console.log(this.state.Traits);
   }
 
   getItemMatrix = () => {
@@ -74,8 +69,7 @@ class App extends Component {
       items: false,
       traits: false,
       itemMatrix: true, }})
-    console.log(this.state);
-    console.log(this.state.Items);
+
   }
 
   changeStyles = (event) => {
@@ -155,10 +149,11 @@ class App extends Component {
 
   render() {
     const { flags, Champions, Galaxies, Items, Traits, searchText, itemID } = this.state;
-    console.log(Champions);
     return (
       <div className="main-page-section">
-        <a className="title">TFT Encyclopedia</a>
+        <a className="title">TFT Encyclopedia - set4
+          <Link to="/set3" className="link">Switch to Set 3</Link>
+        </a>
         <div className="button-section">
           <MyButton
             name="Champions"
