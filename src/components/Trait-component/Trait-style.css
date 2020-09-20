@@ -5,9 +5,10 @@
     align-items: center;
     padding: 1vh 1vw 1vh 1vw;
     margin: 1vh 1vw 1vh 1vw;
-    border: #C41E1E solid 3px;
-    flex-basis: 25vw;
+    border: #CECECE solid 3px;
+    flex-basis: 15vw;
     border-radius: 5%;
+    max-height: 20vh;
 }
 
 .trait-card:hover {
@@ -17,16 +18,22 @@
 
 .trait-name {
     font-weight: bold;
-    color: #C41E1E;
+    color: #2E8BAF;
 }
 
 .trait-image {
     width: 50%;
     height: auto;
-    border-bottom: #C41E1E solid 0.1vw;
+    border-bottom: #2E8BAF solid 0.1vw;
 }
 
-.galaxy-description {
-    color: #C41E1E;
+.trait-description {
+    color: #2E8BAF;
+    overflow: hidden;
+}
+
+.trait-card:hover {
     word-break: break-word;
+    position: static;
+    max-height: 100vh;
 }

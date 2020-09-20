@@ -3,7 +3,7 @@
     border: none;
     background-color: inherit;
     align-items: center;
-    border-bottom: #C41E1E solid 2px;
+    border-bottom: #CECECE solid 2px;
     color: #CECECE;
     text-decoration: none;
     outline: none;
@@ -18,7 +18,7 @@
 .search-bar:focus, .search:hover, .search-bar:active {
     border: none;
     background-color: inherit;
-    border-bottom: #C41E1E solid 2px;
+    border-bottom: #CECECE solid 2px;
     padding: 0 3vw 0 3vw;
 
 }

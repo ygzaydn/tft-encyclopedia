@@ -5,9 +5,9 @@
     align-items: center;
     padding: 1vh 1vw 1vh 1vw;
     margin: 1vh 1vw 1vh 1vw;
-    border: #C41E1E solid 3px;
+    border: #2E8BAF solid 3px;
     border-radius: 5%;
-    flex-basis: 10vh;
+    flex-basis: 12vh;
     box-shadow:
     inset 0 0 0 2px hsl(0, 0%, 80%),
     0 0 0 3px hsl(0, 0%, 90%);
@@ -24,14 +24,14 @@
 }
 .char-name {
     font-weight: bold;
-    color: #C41E1E;
+    color: #2E8BAF;
 }
 
 .char-cost {
-    color: #C41E1E;
+    color: #2E8BAF;
     border-bottom: #E5E5E5 solid 0.1vw;
 }
 
 .char-trait {
-    color: #C41E1E;
+    color: #2E8BAF;
 }

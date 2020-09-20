@@ -5,8 +5,8 @@
     align-items: center;
     padding: 1vh 1vw 1vh 1vw;
     margin: 1vh 1vw 1vh 1vw;
-    border: #C41E1E solid 3px;
-    flex-basis: 25vw;
+    border: #2E8BAF solid 3px;
+    flex-basis: 12vw;
     border-radius: 5%;
 }
 
@@ -17,7 +17,7 @@
 
 .galaxy-name {
     font-weight: bold;
-    color: #C41E1E;
+    color: #2E8BAF;
 }
 
 .galaxy-image {
@@ -27,6 +27,6 @@
 }
 
 .galaxy-description {
-    color: #C41E1E;
+    color: #2E8BAF;
     word-break: break-word;
 }

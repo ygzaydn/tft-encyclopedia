@@ -22,6 +22,11 @@ html {
     }
 }
 
+.main-page-section {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
 .title {
     display: flex;
     flex-direction: column;
@@ -63,10 +68,8 @@ html {
     text-align: center;
     font-weight: bold;;
     padding: 0 0 0.5vh 0;
-    border-bottom:#E5E5E5 solid 2px;
-    border-top:#E5E5E5 solid 2px;
-    border-radius: 30%;
-    color: #E5E5E5;   
+    color: #2E8BAF;
+    background-color: #E5E5E5;
     transition: 1s
 }
 
@@ -110,30 +113,26 @@ html {
     flex-direction: column;
     align-items: center;
     flex-basis:100%;
-    flex-wrap: wrap;
-    
-}
-
-.item-matrix-item-section {
     max-width: 60%;
-    color: #C41E1E;
+    height: auto;
+    color: #2E8BAF;
     background-color: #E5E5E5;
-    border: #E5E5E5 solid 3px;
     border-radius: 10%;
-    padding: 2%;
-    border: #C41E1E solid 5px;
+    padding: 0.2vh 3vh 0 3vh;
+    border: #E5E5E5 solid 5px;
+    text-align: center;
 }
 
 .item-matrix-item-section-title {
-    padding: 0 0 3vh 0;
+    padding: 0.1vh 0 0.1vh 0;
     font-weight: bold;
     font-size:150%;
+    
 }
 
 .item-matrix-item-section-description {
-    padding: 0 0 1vh 0;
+    padding: 0 0 0.2vh 0;
     font-size:125%;
-    
 }
 
 .link {
