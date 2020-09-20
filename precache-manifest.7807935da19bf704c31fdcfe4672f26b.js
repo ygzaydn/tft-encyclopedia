@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7135b8020ccc97d992cd449f1d7b0a28",
+    "revision": "45d31ab9c853f752e736938c7c53c1be",
     "url": "/tft-encyclopedia/index.html"
   },
   {
-    "revision": "3e78c1bc4ddbf73c8991",
-    "url": "/tft-encyclopedia/static/css/main.4ce2b7b6.chunk.css"
+    "revision": "6fe69c9d2a8c0ae53bfe",
+    "url": "/tft-encyclopedia/static/css/main.d3fdd365.chunk.css"
   },
   {
     "revision": "c61e42cfc2e7bd81c518",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tft-encyclopedia/static/js/2.56d4f6d1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3e78c1bc4ddbf73c8991",
-    "url": "/tft-encyclopedia/static/js/main.fe9832f3.chunk.js"
+    "revision": "6fe69c9d2a8c0ae53bfe",
+    "url": "/tft-encyclopedia/static/js/main.a792781b.chunk.js"
   },
   {
     "revision": "745e00794b458272ef56",
