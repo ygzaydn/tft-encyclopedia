@@ -65,3 +65,9 @@
     border-top: solid #2E8BAF 1px;
     
 }
+
+@media only screen and (max-width: 600px) {
+    .item-card{
+        flex-basis: 50vw;
+    }
+}

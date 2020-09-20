@@ -35,3 +35,9 @@
 .char-trait {
     color: #2E8BAF;
 }
+
+@media only screen and (max-width: 600px) {
+    .char-card{
+        flex-basis: 50vw;
+    }
+}
