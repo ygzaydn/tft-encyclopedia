@@ -1,11 +1,11 @@
 .trait-card {
     display:flex;
     flex-direction: column;
-    background-color: #C5D86D;
+    background-color: #C4C4C4;
     align-items: center;
     padding: 1vh 1vw 1vh 1vw;
     margin: 1vh 1vw 1vh 1vw;
-    border: #F05D23 solid 3px;
+    border: #C41E1E solid 3px;
     flex-basis: 25vw;
     border-radius: 5%;
 }
@@ -17,16 +17,16 @@
 
 .trait-name {
     font-weight: bold;
-    color: #261C15;
+    color: #C41E1E;
 }
 
 .trait-image {
     width: 50%;
     height: auto;
-    border-bottom: #F05D23 solid 0.1vw;
+    border-bottom: #C41E1E solid 0.1vw;
 }
 
 .galaxy-description {
-    color: #261C15;
+    color: #C41E1E;
     word-break: break-word;
 }

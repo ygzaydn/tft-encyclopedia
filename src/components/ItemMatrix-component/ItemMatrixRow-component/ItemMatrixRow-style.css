@@ -1,3 +1,4 @@
 .item-matrix-row {
     display: flex;
+    width: max-content
 }
