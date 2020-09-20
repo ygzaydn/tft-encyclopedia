@@ -23,6 +23,7 @@ html {
 }
 
 .main-page-section {
+    max-width: 720px;
     margin: 0 auto;
 }
 
