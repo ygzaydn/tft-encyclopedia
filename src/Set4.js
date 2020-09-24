@@ -289,7 +289,7 @@ class App extends Component {
 
         {flags.items?
           <div className="items-section">
-            <a className="info-title">Items</a>
+            <a className="info-title">Items (hover items for details) </a>
             <div className="item-flex-section">
               {Items.map(el => {
                 return (

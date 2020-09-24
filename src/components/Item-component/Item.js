@@ -9,7 +9,6 @@ const Item = ({ name, imgId, description,set }) => {
                 className="item-image"
                 src={require(`../../assets/set${set}/items/${imgId}.png`)}
             />
-            <a className="item-description">{description}</a>
         </div>
     )
 }
