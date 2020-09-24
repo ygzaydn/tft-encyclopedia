@@ -4,17 +4,19 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import 'fontsource-roboto';
 import './PopoverWrapper-style.css'
+import Card from './Card-component/Card-component'
+import Item from '../Item-component/Item'
 
 const useStyles = makeStyles((theme) => ({
   popover: {
     pointerEvents: 'none',
   },
   paper: {
-    padding: '0',
+    padding: 0,
   },
 }));
 
-export default function PopoverWrapper({children}) {
+export default function PopoverWrapper({id, name, imgId, description,set}) {
     
     const classes = useStyles();
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -37,7 +39,13 @@ export default function PopoverWrapper({children}) {
         onMouseEnter={handlePopoverOpen}
         onMouseLeave={handlePopoverClose}
       >
-        {children}
+        {<Item
+          name={name}
+          key={id}
+          imgId={id}
+          description={description}
+          set={set}
+        />}
       </Typography>
       <Popover
         id="mouse-over-popover"
@@ -48,17 +56,24 @@ export default function PopoverWrapper({children}) {
         open={open}
         anchorEl={anchorEl}
         anchorOrigin={{
-          vertical: 'bottom',
-          horizontal: 'left',
+          vertical: 'top',
+          horizontal: 'center',
         }}
         transformOrigin={{
           vertical: 'top',
-          horizontal: 'left',
+          horizontal: 'top',
         }}
         onClose={handlePopoverClose}
         disableRestoreFocus
       >
-        <Typography>{children}</Typography>
+        <Typography>
+          <Card 
+            name={name}
+            imgId={imgId}
+            description={description}
+            set={set}
+          />
+        </Typography>
       </Popover>
     </div>
   );

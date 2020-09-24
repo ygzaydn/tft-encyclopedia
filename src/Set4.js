@@ -290,19 +290,21 @@ class App extends Component {
         {flags.items?
           <div className="items-section">
             <a className="info-title">Items</a>
+            <div className="item-flex-section">
               {Items.map(el => {
                 return (
-                  <PopoverWrapper className="flex-item">
-                    <Item
-                      name={el.name}
+                  <PopoverWrapper name={el.name}
                       key={el.id}
                       imgId={el.id}
                       description={el.description}
                       set={set}
-                    />
+                      className="flex-item"
+                      id={el.id}
+                    >
                   </PopoverWrapper>
                 )
               })}
+              </div>
           </div>
         : null}
 
