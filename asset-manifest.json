@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/tft-encyclopedia/static/css/main.a1a8ad34.chunk.css",
-    "main.js": "/tft-encyclopedia/static/js/main.3172ff6e.chunk.js",
-    "main.js.map": "/tft-encyclopedia/static/js/main.3172ff6e.chunk.js.map",
+    "main.css": "/tft-encyclopedia/static/css/main.1597dcf1.chunk.css",
+    "main.js": "/tft-encyclopedia/static/js/main.bfc8a922.chunk.js",
+    "main.js.map": "/tft-encyclopedia/static/js/main.bfc8a922.chunk.js.map",
     "runtime-main.js": "/tft-encyclopedia/static/js/runtime-main.2b748469.js",
     "runtime-main.js.map": "/tft-encyclopedia/static/js/runtime-main.2b748469.js.map",
     "static/css/2.7ff582e8.chunk.css": "/tft-encyclopedia/static/css/2.7ff582e8.chunk.css",
-    "static/js/2.b6a46cfe.chunk.js": "/tft-encyclopedia/static/js/2.b6a46cfe.chunk.js",
-    "static/js/2.b6a46cfe.chunk.js.map": "/tft-encyclopedia/static/js/2.b6a46cfe.chunk.js.map",
+    "static/js/2.83f8350b.chunk.js": "/tft-encyclopedia/static/js/2.83f8350b.chunk.js",
+    "static/js/2.83f8350b.chunk.js.map": "/tft-encyclopedia/static/js/2.83f8350b.chunk.js.map",
     "index.html": "/tft-encyclopedia/index.html",
-    "precache-manifest.0cdf14768e644c63a9060074f7f49c7b.js": "/tft-encyclopedia/precache-manifest.0cdf14768e644c63a9060074f7f49c7b.js",
+    "precache-manifest.f2ff05fe124ccbd9ed3587f1614478e8.js": "/tft-encyclopedia/precache-manifest.f2ff05fe124ccbd9ed3587f1614478e8.js",
     "service-worker.js": "/tft-encyclopedia/service-worker.js",
     "static/css/2.7ff582e8.chunk.css.map": "/tft-encyclopedia/static/css/2.7ff582e8.chunk.css.map",
-    "static/css/main.a1a8ad34.chunk.css.map": "/tft-encyclopedia/static/css/main.a1a8ad34.chunk.css.map",
-    "static/js/2.b6a46cfe.chunk.js.LICENSE.txt": "/tft-encyclopedia/static/js/2.b6a46cfe.chunk.js.LICENSE.txt",
+    "static/css/main.1597dcf1.chunk.css.map": "/tft-encyclopedia/static/css/main.1597dcf1.chunk.css.map",
+    "static/js/2.83f8350b.chunk.js.LICENSE.txt": "/tft-encyclopedia/static/js/2.83f8350b.chunk.js.LICENSE.txt",
     "static/media/38.png": "/tft-encyclopedia/static/media/38.32b4bfe1.png",
     "static/media/83.png": "/tft-encyclopedia/static/media/83.32b4bfe1.png",
     "static/media/TFT3_GameVariation_BigLittleLegends.png": "/tft-encyclopedia/static/media/TFT3_GameVariation_BigLittleLegends.ba597847.png",
@@ -128,8 +128,8 @@
   "entrypoints": [
     "static/js/runtime-main.2b748469.js",
     "static/css/2.7ff582e8.chunk.css",
-    "static/js/2.b6a46cfe.chunk.js",
-    "static/css/main.a1a8ad34.chunk.css",
-    "static/js/main.3172ff6e.chunk.js"
+    "static/js/2.83f8350b.chunk.js",
+    "static/css/main.1597dcf1.chunk.css",
+    "static/js/main.bfc8a922.chunk.js"
   ]
 }
