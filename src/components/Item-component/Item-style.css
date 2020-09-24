@@ -24,6 +24,7 @@
     margin: 0 0 2% 0;
     place-content: center;
     place-items: center;
+    overflow: hidden;
 }
 
 .item-image {
@@ -50,6 +51,6 @@
 
 @media only screen and (max-width: 600px) {
     .item-card{
-        flex-basis: 50vw;
+        flex-basis: 100vw;
     }
 }
