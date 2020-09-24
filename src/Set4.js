@@ -55,9 +55,9 @@ class App extends Component {
     let titleBar = document.querySelector('.info-title');
     if(document.querySelector('.info-title')){
       let oldStyle = document.querySelector('.info-title').style;
-    if(window.pageYOffset>window.innerHeight/7){
+     if(window.pageYOffset>window.innerHeight/7){
       
-      titleBar.style="background-color: #2E8BAF;border-color: #2E8BAF;color:white;border:none;border-radius:0;"
+      titleBar.style="background-color: #2E8BAF;border-bottom: 5px solid black; color: #E5E5E5"
     } else {
       titleBar.style=oldStyle;
     }
@@ -183,7 +183,6 @@ class App extends Component {
         return (
           <div className="item-matrix-item-section">
             <a className="item-matrix-item-section-title">{el.name}</a>
-            <a className="item-matrix-item-section-title">______________________________________</a>
             <a className="item-matrix-item-section-description">{el.description}</a>
           </div>
         )
@@ -218,10 +217,13 @@ class App extends Component {
     set === 4 ? MetaData=ChampionsMetaData : MetaData=ChampionsMetaData3
     return (
       <div className="main-page-section">
-        <a className="title">TFT Encyclopedia - set{set}
-          <button onClick={this.changeSet} className="link">Change Set</button>
-        </a>
-        <div className="button-section">
+      <div className="header">
+        <div className="header-title-section">
+          <a className="title">TFT Encyclopedia</a>
+          <a className="title-set">Set - {set}</a>
+          <a onClick={this.changeSet} className="link">Change Set</a>
+        </div>
+        <div className="header-button-section">
           <MyButton
             name="Champions"
             click={this.getChampions}
@@ -245,10 +247,13 @@ class App extends Component {
             click={this.getItemMatrix}
           />
         </div>
+      </div>
+
+        
         <div className="info-section">        
         {flags.champions?
           <div className="char-section">
-            <a className="info-title" ref={this.inputRef}>Champions</a>
+            <a className="info-title">Champions</a>
             <div className="search-section">
             <Search 
               placeholder="Filter by name"

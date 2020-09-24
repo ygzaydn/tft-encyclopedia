@@ -3,21 +3,17 @@
     flex-direction: column;
     background-color: #C4C4C4;
     align-items: center;
-    padding: 1vh 1vw 1vh 1vw;
-    margin: 1vh 1vw 1vh 1vw;
+    padding: 1vh 1vw;
+    margin: 1vh 1vw;
     border: #2E8BAF solid 3px;
-    flex-basis: 12vw;
+    flex-basis: 25vw;
+    max-height: 40vh;
+    max-width: 20%;
     border-radius: 5%;
-    max-height: 20vh;
     box-shadow:
     inset 0 0 0 2px hsl(0, 0%, 80%),
     0 0 0 3px hsl(0, 0%, 90%);
         
-}
-
-.trait-card:hover {
-    transform: scale(1.25);
-    transition-duration: 0.5s;
 }
 
 .trait-name {
@@ -38,8 +34,8 @@
 
 .trait-card:hover {
     word-break: break-word;
-    position: static;
     max-height: 100vh;
+    transition-duration: 0.9s;
 }
 
 @media only screen and (max-width: 600px) {
