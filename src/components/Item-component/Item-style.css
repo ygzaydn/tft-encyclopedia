@@ -35,15 +35,4 @@
     margin: 0 0 2% 0;
 }
 
-.item-description {
-    flex-basis: 65%;
-    min-height: 20%;
-    padding: 1% 0 50% 0;
-    color: #2E8BAF;
-    margin: 0 0 2vh 0;
-    text-align: center;
-    word-break: break-word;
-    overflow: hidden;
-}
-
 

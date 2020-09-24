@@ -3,12 +3,10 @@ import React, { Component } from 'react';
 import './App-style.css'
 import MyButton from './components/MyButton-component/MyButton'
 import Champion from './components/Champion-component/Champion'
-import Item from './components/Item-component/Item'
-import Trait from './components/Trait-component/Trait'
-import Galaxy from './components/Galaxy-component/Galaxy'
 import Search from './components/Search-component/Search'
 import ItemMatrix from './components/ItemMatrix-component/ItemMatrix'
 import PopoverWrapper from './components/PopoverWrapper-component/PopoverWrapper'
+import ItemCard from './components/PopoverWrapper-component/ItemCard-component/ItemCard'
 
 import ChampionsMetaData from './assets/set4/champions.json'
 import ItemsMetaData from './assets/set4/items.json'
@@ -173,6 +171,7 @@ getChampions = () => {
   }
 
   itemMatrixRender = (id) => {
+    const { set } = this.state;
     let myId;
     (id%10>=id/10 ?
       myId = id
@@ -181,10 +180,14 @@ getChampions = () => {
     return (
       ItemsMetaData.filter(el=> el.id==myId).map(el=> {
         return (
-          <div className="item-matrix-item-section">
-            <a className="item-matrix-item-section-title">{el.name}</a>
-            <a className="item-matrix-item-section-description">{el.description}</a>
-          </div>
+ 
+            <ItemCard
+              name={el.name}
+              description={el.description}
+              imgId={el.id}
+              set={set}
+            />
+
         )
       })
     )

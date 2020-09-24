@@ -16,18 +16,21 @@
 }
 
 .trait-name {
+    flex-basis: 20%;
     font-weight: bold;
     color: #2E8BAF;
+    text-align: center;
+    margin: 0 0 2% 0;
+    place-content: center;
+    place-items: center;
 }
 
 .trait-image {
-    width: 50%;
+    flex-basis:10%;
+    width: 60%;
     height: auto;
-    border-bottom: #2E8BAF solid 0.1vw;
-}
-
-@media only screen and (max-width: 600px) {
-    .trait-card{
-        flex-basis: 50vw;
-    }
+    place-content: center;
+    place-items: center;
+    padding: 1% 0;
+    margin: 0 0 2% 0;;
 }

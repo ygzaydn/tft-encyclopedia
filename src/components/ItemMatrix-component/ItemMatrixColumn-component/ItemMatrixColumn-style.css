@@ -3,7 +3,6 @@
     filter: brightness(50%);
     margin: 0 0.1vw 0 0;
     transition: 0.25s linear;
-    
 }
 
 .item-image-column:hover {
