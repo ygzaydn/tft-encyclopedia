@@ -8,6 +8,7 @@ import Trait from './components/Trait-component/Trait'
 import Galaxy from './components/Galaxy-component/Galaxy'
 import Search from './components/Search-component/Search'
 import ItemMatrix from './components/ItemMatrix-component/ItemMatrix'
+import PopoverWrapper from './components/PopoverWrapper-component/PopoverWrapper'
 
 import ChampionsMetaData from './assets/set4/champions.json'
 import ItemsMetaData from './assets/set4/items.json'
@@ -289,17 +290,19 @@ class App extends Component {
         {flags.items?
           <div className="items-section">
             <a className="info-title">Items</a>
-            {Items.map(el => {
-              return (
-                <Item
-                  name={el.name}
-                  key={el.id}
-                  imgId={el.id}
-                  description={el.description}
-                  set={set}
-                 />
-              )
-            })}
+              {Items.map(el => {
+                return (
+                  <PopoverWrapper className="flex-item">
+                    <Item
+                      name={el.name}
+                      key={el.id}
+                      imgId={el.id}
+                      description={el.description}
+                      set={set}
+                    />
+                  </PopoverWrapper>
+                )
+              })}
           </div>
         : null}
 

@@ -1,0 +1,6 @@
+.flex-item {
+    flex-basis: 25%;
+    max-width: 200px;
+    min-height: 10%;
+    max-height: 15%;
+}
