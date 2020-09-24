@@ -58,7 +58,7 @@ class App extends Component {
       let oldStyle = document.querySelector('.info-title').style;
      if(window.pageYOffset>window.innerHeight/7){
       
-      titleBar.style="background-color: #2E8BAF;border-bottom: 5px solid black; color: #E5E5E5"
+      titleBar.style="background: linear-gradient(90deg, #47518E, #2E8BAF);border-bottom: 5px solid black; color: #E5E5E5"
     } else {
       titleBar.style=oldStyle;
     }
@@ -283,7 +283,7 @@ getChampions = () => {
 
         {flags.items?
           <div className="items-section">
-            <a className="info-title">Items (hover items for details) </a>
+            <a className="info-title">Items</a>
             <div className="item-flex-section">
               {Items.map(el => {
                 return (
@@ -314,6 +314,7 @@ getChampions = () => {
                     description={el.description}
                     imgId={el.key}
                     galaxy={true}
+                    item={null}
                   />
                 )
               })}
@@ -324,17 +325,20 @@ getChampions = () => {
         {flags.traits?
           <div className="traits-section">
             <a className="info-title">Traits</a>
+            <div className="item-flex-section">
             {Traits.map(el => {
               return (
-                <Trait
+                <PopoverWrapper 
                   name={el.name}
-                  key={el.key}
-                  description={el.description}
+                  keyId={el.key}
                   imgId={el.key}
+                  description={el.description}
                   set={set}
-                  />
+                  trait={true}
+                />
               )
             })}
+            </div>
           </div>
         : null}
 

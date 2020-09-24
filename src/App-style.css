@@ -1,5 +1,5 @@
 html { 
-    background: #2E8BAF ; 
+    background: linear-gradient(90deg, #47518E, #2E8BAF);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -13,17 +13,14 @@ html {
     flex-basis: 30vw;
 }
 
-
 @media only screen and (max-width: 600px) {
     .header-button-section{
-        
         flex-basis: 100%;
     }
 }
 
 .title {
     padding: 5%;
-    font-family: 'Indie Flower', cursive;
     text-align: center;
     margin: 1vh 2vw 1vh 2vw;
     color: #2E8BAF;
@@ -74,7 +71,7 @@ html {
     background-color: #E5E5E5;
     transition: 1s;
     min-width: 100vw;
-}
+    box-shadow: inset 0 -2px 0 black;}
 
 .items-section {
     display:flex;

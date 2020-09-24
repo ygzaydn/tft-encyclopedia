@@ -15,7 +15,6 @@ const Trait = ({name, imgId, description, set}) => {
                 className="trait-image"
                 src={require(`../../assets/set${set}/traits/${imgId}.png`)}
             />
-            <a className="trait-description">{description}</a>
         </div>
     )
 }

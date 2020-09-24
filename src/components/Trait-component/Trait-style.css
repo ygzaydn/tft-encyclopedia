@@ -7,13 +7,12 @@
     margin: 1vh 1vw;
     border: #2E8BAF solid 3px;
     flex-basis: 25vw;
-    max-height: 40vh;
-    max-width: 20%;
+    max-height: 20vh;
+    max-width: 300px;
     border-radius: 5%;
     box-shadow:
     inset 0 0 0 2px hsl(0, 0%, 80%),
     0 0 0 3px hsl(0, 0%, 90%);
-        
 }
 
 .trait-name {
@@ -25,17 +24,6 @@
     width: 50%;
     height: auto;
     border-bottom: #2E8BAF solid 0.1vw;
-}
-
-.trait-description {
-    color: #2E8BAF;
-    overflow: hidden;
-}
-
-.trait-card:hover {
-    word-break: break-word;
-    max-height: 100vh;
-    transition-duration: 0.9s;
 }
 
 @media only screen and (max-width: 600px) {

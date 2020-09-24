@@ -10,7 +10,6 @@ const Galaxy = ({name, imgId, description }) => {
                 className="galaxy-image"
                 src={require(`../../assets/set3/galaxies/${imgId}.png`)}
             />
-            <a className="galaxy-description">{description}</a>
         </div>
     )
 }

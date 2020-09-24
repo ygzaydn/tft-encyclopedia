@@ -6,8 +6,11 @@ import 'fontsource-roboto';
 import './PopoverWrapper-style.css'
 import ItemCard from './ItemCard-component/ItemCard'
 import GalaxyCard from './GalaxyCard-component/GalaxyCard'
+import TraitCard from './TraitCard-component/TraitCard'
+
 import Item from '../Item-component/Item'
 import Galaxy from '../Galaxy-component/Galaxy'
+import Trait from '../Trait-component/Trait'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -19,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function PopoverWrapper({ keyId, galaxy, item ,id, name, imgId, description, set }) {
+export default function PopoverWrapper({ trait, keyId, galaxy, item ,id, name, imgId, description, set }) {
     
     const classes = useStyles();
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -45,11 +48,20 @@ export default function PopoverWrapper({ keyId, galaxy, item ,id, name, imgId, d
       >
         {item===true 
         ? <Item
+            name={name}
+            key={id}
+            imgId={id}
+            description={description}
+            set={set} />
+        : null }
+
+        {trait===true
+        ? <Trait
           name={name}
-          key={id}
-          imgId={id}
+          key={keyId}
           description={description}
-          set={set} />
+          imgId={imgId}
+          set={set}/>
         : null}
 
         {galaxy===true
@@ -84,12 +96,22 @@ export default function PopoverWrapper({ keyId, galaxy, item ,id, name, imgId, d
 
           {item===true 
             ?<ItemCard 
-            name={name}
-            imgId={imgId}
-            description={description}
-            set={set} />
-          : null}
+              name={name}
+              imgId={imgId}
+              description={description}
+              set={set} />
+            : null}
 
+          {trait===true
+          ? <TraitCard
+            name={name}
+            key={keyId}
+            description={description}
+            imgId={imgId}
+            set={set}
+            />
+          : null} 
+            
           {galaxy===true
           ? <GalaxyCard 
             name={name}
