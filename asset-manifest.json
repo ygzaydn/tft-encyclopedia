@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/tft-encyclopedia/static/css/main.43c30aa9.chunk.css",
-    "main.js": "/tft-encyclopedia/static/js/main.53c79a66.chunk.js",
-    "main.js.map": "/tft-encyclopedia/static/js/main.53c79a66.chunk.js.map",
+    "main.css": "/tft-encyclopedia/static/css/main.ef4bf193.chunk.css",
+    "main.js": "/tft-encyclopedia/static/js/main.036230f6.chunk.js",
+    "main.js.map": "/tft-encyclopedia/static/js/main.036230f6.chunk.js.map",
     "runtime-main.js": "/tft-encyclopedia/static/js/runtime-main.2b748469.js",
     "runtime-main.js.map": "/tft-encyclopedia/static/js/runtime-main.2b748469.js.map",
     "static/css/2.7ff582e8.chunk.css": "/tft-encyclopedia/static/css/2.7ff582e8.chunk.css",
     "static/js/2.dee4779d.chunk.js": "/tft-encyclopedia/static/js/2.dee4779d.chunk.js",
     "static/js/2.dee4779d.chunk.js.map": "/tft-encyclopedia/static/js/2.dee4779d.chunk.js.map",
     "index.html": "/tft-encyclopedia/index.html",
-    "precache-manifest.396a3dc29d8cbbb153502c02b56611f4.js": "/tft-encyclopedia/precache-manifest.396a3dc29d8cbbb153502c02b56611f4.js",
+    "precache-manifest.9c6ccaa6e8aad6752cd0c05c92949a67.js": "/tft-encyclopedia/precache-manifest.9c6ccaa6e8aad6752cd0c05c92949a67.js",
     "service-worker.js": "/tft-encyclopedia/service-worker.js",
     "static/css/2.7ff582e8.chunk.css.map": "/tft-encyclopedia/static/css/2.7ff582e8.chunk.css.map",
-    "static/css/main.43c30aa9.chunk.css.map": "/tft-encyclopedia/static/css/main.43c30aa9.chunk.css.map",
+    "static/css/main.ef4bf193.chunk.css.map": "/tft-encyclopedia/static/css/main.ef4bf193.chunk.css.map",
     "static/js/2.dee4779d.chunk.js.LICENSE.txt": "/tft-encyclopedia/static/js/2.dee4779d.chunk.js.LICENSE.txt",
     "static/media/38.png": "/tft-encyclopedia/static/media/38.32b4bfe1.png",
     "static/media/83.png": "/tft-encyclopedia/static/media/83.32b4bfe1.png",
@@ -129,7 +129,7 @@
     "static/js/runtime-main.2b748469.js",
     "static/css/2.7ff582e8.chunk.css",
     "static/js/2.dee4779d.chunk.js",
-    "static/css/main.43c30aa9.chunk.css",
-    "static/js/main.53c79a66.chunk.js"
+    "static/css/main.ef4bf193.chunk.css",
+    "static/js/main.036230f6.chunk.js"
   ]
 }
