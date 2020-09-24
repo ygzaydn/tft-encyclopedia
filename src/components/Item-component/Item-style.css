@@ -49,8 +49,3 @@
 }
 
 
-@media only screen and (max-width: 600px) {
-    .item-card{
-        flex-basis: 100vw;
-    }
-}
