@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/tft-encyclopedia/static/css/main.cc75c8e5.chunk.css",
-    "main.js": "/tft-encyclopedia/static/js/main.1c62b0e8.chunk.js",
-    "main.js.map": "/tft-encyclopedia/static/js/main.1c62b0e8.chunk.js.map",
+    "main.css": "/tft-encyclopedia/static/css/main.43c30aa9.chunk.css",
+    "main.js": "/tft-encyclopedia/static/js/main.53c79a66.chunk.js",
+    "main.js.map": "/tft-encyclopedia/static/js/main.53c79a66.chunk.js.map",
     "runtime-main.js": "/tft-encyclopedia/static/js/runtime-main.2b748469.js",
     "runtime-main.js.map": "/tft-encyclopedia/static/js/runtime-main.2b748469.js.map",
-    "static/js/2.56d4f6d1.chunk.js": "/tft-encyclopedia/static/js/2.56d4f6d1.chunk.js",
-    "static/js/2.56d4f6d1.chunk.js.map": "/tft-encyclopedia/static/js/2.56d4f6d1.chunk.js.map",
+    "static/css/2.7ff582e8.chunk.css": "/tft-encyclopedia/static/css/2.7ff582e8.chunk.css",
+    "static/js/2.dee4779d.chunk.js": "/tft-encyclopedia/static/js/2.dee4779d.chunk.js",
+    "static/js/2.dee4779d.chunk.js.map": "/tft-encyclopedia/static/js/2.dee4779d.chunk.js.map",
     "index.html": "/tft-encyclopedia/index.html",
-    "precache-manifest.4013406351274d9b7a7f9a73d643ff8a.js": "/tft-encyclopedia/precache-manifest.4013406351274d9b7a7f9a73d643ff8a.js",
+    "precache-manifest.396a3dc29d8cbbb153502c02b56611f4.js": "/tft-encyclopedia/precache-manifest.396a3dc29d8cbbb153502c02b56611f4.js",
     "service-worker.js": "/tft-encyclopedia/service-worker.js",
-    "static/css/main.cc75c8e5.chunk.css.map": "/tft-encyclopedia/static/css/main.cc75c8e5.chunk.css.map",
-    "static/js/2.56d4f6d1.chunk.js.LICENSE.txt": "/tft-encyclopedia/static/js/2.56d4f6d1.chunk.js.LICENSE.txt",
+    "static/css/2.7ff582e8.chunk.css.map": "/tft-encyclopedia/static/css/2.7ff582e8.chunk.css.map",
+    "static/css/main.43c30aa9.chunk.css.map": "/tft-encyclopedia/static/css/main.43c30aa9.chunk.css.map",
+    "static/js/2.dee4779d.chunk.js.LICENSE.txt": "/tft-encyclopedia/static/js/2.dee4779d.chunk.js.LICENSE.txt",
     "static/media/38.png": "/tft-encyclopedia/static/media/38.32b4bfe1.png",
     "static/media/83.png": "/tft-encyclopedia/static/media/83.32b4bfe1.png",
     "static/media/TFT3_GameVariation_BigLittleLegends.png": "/tft-encyclopedia/static/media/TFT3_GameVariation_BigLittleLegends.ba597847.png",
@@ -104,6 +106,7 @@
     "static/media/poppy.png": "/tft-encyclopedia/static/media/poppy.7fd78f5d.png",
     "static/media/rakan.png": "/tft-encyclopedia/static/media/rakan.07f90526.png",
     "static/media/riven.png": "/tft-encyclopedia/static/media/riven.f4932347.png",
+    "static/media/index.css": "/tft-encyclopedia/static/media/roboto-vietnamese-400-normal.a8be5b46.woff2",
     "static/media/rumble.png": "/tft-encyclopedia/static/media/rumble.dfaf5332.png",
     "static/media/shaco.png": "/tft-encyclopedia/static/media/shaco.66e53632.png",
     "static/media/soraka.png": "/tft-encyclopedia/static/media/soraka.2e7c2a17.png",
@@ -124,8 +127,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2b748469.js",
-    "static/js/2.56d4f6d1.chunk.js",
-    "static/css/main.cc75c8e5.chunk.css",
-    "static/js/main.1c62b0e8.chunk.js"
+    "static/css/2.7ff582e8.chunk.css",
+    "static/js/2.dee4779d.chunk.js",
+    "static/css/main.43c30aa9.chunk.css",
+    "static/js/main.53c79a66.chunk.js"
   ]
 }
