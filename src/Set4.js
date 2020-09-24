@@ -66,8 +66,7 @@ class App extends Component {
     
   }
 
-
-  getChampions = () => {
+getChampions = () => {
     this.setState({flags: {
       champions: true,
       galaxies: false,
@@ -227,26 +226,21 @@ class App extends Component {
         <div className="header-button-section">
           <MyButton
             name="Champions"
-            click={this.getChampions}
-          />
+            click={this.getChampions}/>
           <MyButton
             name="Items"
-            click={this.getItems}
-          />
+            click={this.getItems}/>
           {set===3
           ?<MyButton
             name="Galaxies"
-            click={this.getGalaxies}
-          />
+            click={this.getGalaxies}/>
           : null}
           <MyButton
             name="Traits"
-            click={this.getTraits}
-          />
+            click={this.getTraits}/>
           <MyButton
             name="Item Matrix"
-            click={this.getItemMatrix}
-          />
+            click={this.getItemMatrix}/>
         </div>
       </div>
 
@@ -293,15 +287,15 @@ class App extends Component {
             <div className="item-flex-section">
               {Items.map(el => {
                 return (
-                  <PopoverWrapper name={el.name}
-                      key={el.id}
+                  <PopoverWrapper 
+                      name={el.name}
+                      keyId={el.id}
                       imgId={el.id}
                       description={el.description}
                       set={set}
-                      className="flex-item"
                       id={el.id}
-                    >
-                  </PopoverWrapper>
+                      item={true}
+                    />
                 )
               })}
               </div>
@@ -311,15 +305,19 @@ class App extends Component {
         {flags.galaxies?
           <div className="galaxy-section">
             <a className="info-title">Galaxies</a>
-            {Galaxies.map(el => {
-              return (
-                <Galaxy
-                  name={el.name}
-                  key={el.key}
-                  description={el.description}
-                  imgId={el.key} />
-              )
-            })}
+             <div className="item-flex-section">
+              {Galaxies.map(el => {
+                return (
+                  <PopoverWrapper 
+                    name={el.name}
+                    keyId={el.key}
+                    description={el.description}
+                    imgId={el.key}
+                    galaxy={true}
+                  />
+                )
+              })}
+            </div>
           </div>
         : null}
 

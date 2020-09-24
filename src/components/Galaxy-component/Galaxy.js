@@ -1,5 +1,4 @@
 import React from 'react'
-
 import './Galaxy-style.css'
 
 const Galaxy = ({name, imgId, description }) => {

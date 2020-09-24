@@ -1,12 +1,9 @@
 .flex-item {
-    flex-basis: 25%;
-    max-width: 200px;
-    min-height: 10%;
-    max-height: 15%;
+    flex-basis: 30%;
 }
 
 @media only screen and (max-width: 600px) {
     .flex-item{
-        flex-basis: 100vw;
+        flex-basis: 60%;
     }
 }
